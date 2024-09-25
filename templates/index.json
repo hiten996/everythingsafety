@@ -119,7 +119,7 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "best-selling",
             "subheading": "",
             "title": "",
             "url": "",
