@@ -134,8 +134,9 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/image_23.png",
             "subheading": "",
-            "title": "",
+            "title": "Head & Face Protection",
             "url": "",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
