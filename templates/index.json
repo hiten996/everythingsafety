@@ -133,8 +133,7 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/image_23.png",
+            "collection": "news-and-blogs",
             "subheading": "",
             "title": "Head & Face Protection",
             "url": "",
@@ -148,7 +147,7 @@
         "collection_xRmHCY": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "news-and-blogs",
             "subheading": "",
             "title": "",
             "url": "",
