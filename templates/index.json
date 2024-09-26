@@ -138,7 +138,7 @@
             "title": "Head & Face Protection",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start text-start",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -149,10 +149,10 @@
           "settings": {
             "collection": "news-and-blogs",
             "subheading": "",
-            "title": "",
+            "title": "Hand Protection",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start text-start",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
