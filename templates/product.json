@@ -12,32 +12,22 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
           }
         },
-        "badges": {
-          "type": "badges",
+        "rating": {
+          "type": "rating",
           "settings": {
+            "show_empty": true
           }
         },
         "price": {
           "type": "price",
           "settings": {
             "show_taxes_notice": false
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
           }
         },
         "payment_terms": {
@@ -85,11 +75,9 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "badges",
-        "price",
         "rating",
+        "price",
         "payment_terms",
         "separator",
         "description",
