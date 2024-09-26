@@ -33,7 +33,7 @@
     "main": {
       "type": "main-collection",
       "settings": {
-        "products_per_page": 8,
+        "products_per_page": 24,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "filter_layout": "sidebar",
@@ -43,38 +43,10 @@
         "show_filter_values_count": true,
         "open_first_filter_group": true
       }
-    },
-    "featured_collection_BUPaXG": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "news-and-blogs",
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_count": 3,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Recommended Products",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
     }
   },
   "order": [
     "banner",
-    "main",
-    "featured_collection_BUPaXG"
+    "main"
   ]
 }

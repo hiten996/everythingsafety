@@ -124,7 +124,7 @@
             "title": "",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-start text-start",
+            "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -133,12 +133,12 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "news-and-blogs",
+            "collection": "",
             "subheading": "",
-            "title": "Head & Face Protection",
+            "title": "",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-start text-start",
+            "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -147,12 +147,12 @@
         "collection_xRmHCY": {
           "type": "collection",
           "settings": {
-            "collection": "news-and-blogs",
+            "collection": "",
             "subheading": "",
-            "title": "Hand Protection",
+            "title": "",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-start text-start",
+            "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
