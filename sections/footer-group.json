@@ -92,10 +92,11 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
+            "image": "shopify://shop_images/image_29.png",
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "title": "",
+            "content": "<p>Best information about the company gies here but now lorem ipsum is fine © 2023 All rights reserved.</p>"
           }
         },
         "links": {
