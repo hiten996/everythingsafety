@@ -85,7 +85,7 @@
                       </div>
                     {%- endif -%}
 
-                    {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+                    <!-- {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
                       {%- if form.posted_successfully? -%}
                         {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
                         {%- render 'banner', content: success_message, status: 'success' -%}
@@ -100,7 +100,7 @@
                         {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
                         {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
                       {%- endif -%}
-                    {%- endform -%}
+                    {%- endform -%} -->
                   </div>
                 </div>
             {%- endcase -%}
