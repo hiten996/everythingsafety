@@ -15,3 +15,7 @@
 .slideshow__carousel .circle-button--bordered{
   border: none;
 }
+.slideshow__carousel .slideshow__controls{
+  bottom: 50px;
+  left: 30px;
+}
