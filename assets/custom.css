@@ -12,6 +12,6 @@
 .slideshow__carousel .button{
   padding: 22px 60px;
 }
-.slideshow__carousel .prev-next-buttons{
-  
+.slideshow__carousel .circle-button--bordered{
+  border: none;
 }
