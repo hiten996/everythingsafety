@@ -19,3 +19,8 @@
   bottom: 50px;
   left: 50px;
 }
+.floating-controls-container .is-scrollable~.circle-button:not([disabled]) {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
