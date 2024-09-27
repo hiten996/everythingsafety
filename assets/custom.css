@@ -30,4 +30,5 @@ button.circle-button.circle-button--lg.circle-button--fill.border.group{
 }
 .shopify-section--featured-collection .circle-button{
   display: flex;
+  gap: 10px;
 }
