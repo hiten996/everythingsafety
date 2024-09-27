@@ -9,3 +9,6 @@
   font-size: 60px;
   font-weight: 700;
 }
+.slideshow__carousel .button{
+  padding: 22px 60px;
+}
