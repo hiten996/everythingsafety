@@ -49,7 +49,7 @@
             "button_background": "#ff872e",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 37,
             "background": "",
             "background_gradient": ""
           }
@@ -86,7 +86,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Featured collection",
+        "title": "Best Selling",
         "content": "",
         "link_url": "",
         "link_text": "View all",
