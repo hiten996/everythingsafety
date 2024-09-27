@@ -28,3 +28,6 @@ button.circle-button.circle-button--lg.circle-button--fill.border.group{
   top: -100px;
   border: none;
 }
+.shopify-section--featured-collection .circle-button{
+  display: flex;
+}
