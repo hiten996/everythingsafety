@@ -152,7 +152,10 @@ LIQUID
             <div class="prev-next-buttons">
               <button is="prev-button" aria-controls="{{ slideshow_id }}" class="circle-button circle-button--lg {% if section.settings.controls_type == 'filled_arrows' %}circle-button--fill{% else %}circle-button--bordered{% endif %} group">
                 <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
-                <span class="animated-arrow animated-arrow--reverse"></span>
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 0L8.4 1.4L3.8 6L20 6V8L3.8 8L8.4 12.6L7 14L0 7L7 0Z" fill="white"/>
+</svg>
+
               </button>
 
               <button is="next-button" aria-controls="{{ slideshow_id }}" class="circle-button circle-button--lg {% if section.settings.controls_type == 'filled_arrows' %}circle-button--fill{% else %}circle-button--bordered{% endif %} group">
