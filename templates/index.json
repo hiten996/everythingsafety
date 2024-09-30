@@ -106,6 +106,7 @@
           "type": "collection",
           "settings": {
             "collection": "best-selling",
+            "image": "shopify://shop_images/image_21.png",
             "subheading": "",
             "title": "Workwear",
             "url": "",
