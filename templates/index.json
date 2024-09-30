@@ -306,7 +306,7 @@
         "heading_BX4cX4": {
           "type": "heading",
           "settings": {
-            "text": "Meet EverythingSafety.",
+            "text": "Meet <br>EverythingSafety.",
             "heading_tag": "h1"
           }
         },
