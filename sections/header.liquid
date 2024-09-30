@@ -74,8 +74,12 @@ the underlying logic of the menu.
     }
   {%- endif -%}
 </style>
-
 <height-observer variable="header">
+<div class="top_bar">
+    <div class="header__wrapper">
+    </div>
+</div>
+  
   <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
     <div class="header__wrapper">
       {%- comment -%}
