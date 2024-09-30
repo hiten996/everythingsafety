@@ -49,27 +49,7 @@ Supported parameters
 
   <div class="blog-post-card__info">
     <div class="v-stack {% if featured %}gap-5 sm:gap-6{% else %}gap-4 sm:gap-5{% endif %}">
-      <div class="v-stack gap-3 {% if featured %}sm:gap-5{% else %}sm:gap-4{% endif %}">
-        {%- if featured and show_category and article.tags.size > 0 -%}
-          <span class="badge badge--current badge--lg">{{ article.tags | first }}</span>
-        {%- endif -%}
-
-        <p class="{% if heading_size != blank %}{{ heading_size }}{% elsif featured %}h2{% else %}h3{% endif %}">
-          {%- if article -%}
-            <a href="{{ article.url }}">{{ article.title }}</a>
-          {%- else -%}
-            {{- 'general.on_boarding.blog_post_title' | t -}}
-          {%- endif -%}
-        </p>
-
-        {%- if show_excerpt -%}
-          {%- if article -%}
-            <p {% if featured %}class="text-lg"{% endif %}>{{ article.excerpt_or_content | strip_html | truncate: 200 }}</p>
-          {%- else -%}
-            <p {% if featured %}class="text-lg"{% endif %}>{{ 'general.on_boarding.blog_post_excerpt' | t }}</p>
-          {%- endif -%}
-        {%- endif -%}
-      </div>
+      
 
       {%- if show_date or show_author or show_comments_count -%}
         <div class="blog-post-card__meta">
@@ -95,6 +75,27 @@ Supported parameters
           {%- endif -%}
         </div>
       {%- endif -%}
+      <div class="v-stack gap-3 {% if featured %}sm:gap-5{% else %}sm:gap-4{% endif %}">
+        {%- if featured and show_category and article.tags.size > 0 -%}
+          <span class="badge badge--current badge--lg">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        <p class="{% if heading_size != blank %}{{ heading_size }}{% elsif featured %}h2{% else %}h3{% endif %}">
+          {%- if article -%}
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          {%- else -%}
+            {{- 'general.on_boarding.blog_post_title' | t -}}
+          {%- endif -%}
+        </p>
+
+        {%- if show_excerpt -%}
+          {%- if article -%}
+            <p {% if featured %}class="text-lg"{% endif %}>{{ article.excerpt_or_content | strip_html | truncate: 200 }}</p>
+          {%- else -%}
+            <p {% if featured %}class="text-lg"{% endif %}>{{ 'general.on_boarding.blog_post_excerpt' | t }}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
     </div>
   </div>
 {%- endcapture -%}
