@@ -2,7 +2,7 @@
 
 <style>
   #shopify-section-{{ section.id }} {
-    --blog-posts-per-row: {% if section.blocks.first.type == 'blog' %}{{ section.blocks.first.settings.blog.articles_count | default: 3 | at_least: 2 | at_most: section.blocks.first.settings.posts_count | at_most: 3 }}{% else %}3{% endif %};
+    --blog-posts-per-row: {% if section.blocks.first.type == 'blog' %}{{ section.blocks.first.settings.blog.articles_count | default: 3 | at_least: 3 | at_most: section.blocks.first.settings.posts_count | at_most: 3 }}{% else %}3{% endif %};
     --blog-posts-grid: {% if section.blocks.first.settings.stack_items or section.blocks.first.type == 'article' %}auto / minmax(0, 1fr)){% else %}auto / auto-flow 74vw{% endif %};
   }
 
