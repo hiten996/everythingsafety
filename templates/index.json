@@ -116,29 +116,15 @@
             "overlay_opacity": 30
           }
         },
-        "collection-2": {
+        "collection-3": {
           "type": "collection",
           "settings": {
             "collection": "best-selling",
             "subheading": "",
-            "title": "",
+            "title": "Eye Protection",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start text-start",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -147,12 +133,26 @@
         "collection_xRmHCY": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "best-selling",
             "subheading": "",
-            "title": "",
+            "title": "Head & FaceProtection",
             "url": "",
             "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start text-start",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_wk8XnE": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-selling",
+            "subheading": "",
+            "title": "Hand Protection",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-start text-start",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -161,9 +161,9 @@
       },
       "block_order": [
         "collection-1",
-        "collection-2",
         "collection-3",
-        "collection_xRmHCY"
+        "collection_xRmHCY",
+        "collection_wk8XnE"
       ],
       "settings": {
         "full_width": true,
