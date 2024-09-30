@@ -21,18 +21,20 @@ Supported variables
     </li>
   {%- endif -%}
 
-  {%- if settings.social_twitter != blank or shop.brand.metafields.social_links.twitter != blank -%}
-    <li>
-      <a href="{{ settings.social_twitter | default: shop.brand.metafields.social_links.twitter }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Twitter' }}">
-        {%- render 'icon' with 'twitter' -%}
-      </a>
-    </li>
-  {%- endif -%}
+
 
   {%- if settings.social_instagram != blank or shop.brand.metafields.social_links.instagram != blank -%}
     <li>
       <a href="{{ settings.social_instagram | default: shop.brand.metafields.social_links.instagram }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Instagram' }}">
         {%- render 'icon' with 'instagram' -%}
+      </a>
+    </li>
+  {%- endif -%}
+
+    {%- if settings.social_twitter != blank or shop.brand.metafields.social_links.twitter != blank -%}
+    <li>
+      <a href="{{ settings.social_twitter | default: shop.brand.metafields.social_links.twitter }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Twitter' }}">
+        {%- render 'icon' with 'twitter' -%}
       </a>
     </li>
   {%- endif -%}
