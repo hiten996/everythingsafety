@@ -152,7 +152,11 @@ the underlying logic of the menu.
           </div>
         </div>
       </div>
-
+      <li class="search-mobile">
+        <a href="{{ routes.search_url }}" class="hidden tap-area sm:block /" aria-controls="search-drawer">
+          <span class="sr-only">{{ 'header.general.search' | t }}</span>
+        </a>
+      </li>
 
     <div class="search-container">
       <input type="text" placeholder="Search our entire store by category, product..." class="search-input">
