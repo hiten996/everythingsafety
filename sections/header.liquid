@@ -209,22 +209,7 @@ the underlying logic of the menu.
               </div>
             </a>
           </li>
-          
-          {%- if shop.customer_accounts_enabled -%}
-            <li>
-              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="hidden tap-area sm:block">
-                <span class="sr-only">{% if customer %}{{ 'header.general.account' | t }}{% else %}{{ 'header.general.login' | t }}{% endif %}</span>
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 20.5C5.45 20.5 4.97933 20.3043 4.588 19.913C4.196 19.521 4 19.05 4 18.5C4 17.95 4.196 17.479 4.588 17.087C4.97933 16.6957 5.45 16.5 6 16.5C6.55 16.5 7.02067 16.6957 7.412 17.087C7.804 17.479 8 17.95 8 18.5C8 19.05 7.804 19.521 7.412 19.913C7.02067 20.3043 6.55 20.5 6 20.5ZM16 20.5C15.45 20.5 14.9793 20.3043 14.588 19.913C14.196 19.521 14 19.05 14 18.5C14 17.95 14.196 17.479 14.588 17.087C14.9793 16.6957 15.45 16.5 16 16.5C16.55 16.5 17.021 16.6957 17.413 17.087C17.8043 17.479 18 17.95 18 18.5C18 19.05 17.8043 19.521 17.413 19.913C17.021 20.3043 16.55 20.5 16 20.5ZM5.15 4.5L7.55 9.5H14.55L17.3 4.5H5.15ZM4.2 2.5H18.95C19.3333 2.5 19.625 2.67067 19.825 3.012C20.025 3.354 20.0333 3.7 19.85 4.05L16.3 10.45C16.1167 10.7833 15.8707 11.0417 15.562 11.225C15.254 11.4083 14.9167 11.5 14.55 11.5H7.1L6 13.5H18V15.5H6C5.25 15.5 4.68333 15.1707 4.3 14.512C3.91667 13.854 3.9 13.2 4.25 12.55L5.6 10.1L2 2.5H0V0.5H3.25L4.2 2.5Z" fill="white"/>
-                  </svg>
-                <div class="main-header-wishlist">
-                  Cart
-                </div>
-              </a>
-            </li>
-          {%- endif -%}
-
-          <li>
+               <li>
             <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
               <span class="sr-only">{{ 'header.general.cart' | t }}</span>
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,6 +227,21 @@ the underlying logic of the menu.
               </div>
             </a>
           </li>
+          {%- if shop.customer_accounts_enabled -%}
+            <li>
+              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="hidden tap-area sm:block">
+                <span class="sr-only">{% if customer %}{{ 'header.general.account' | t }}{% else %}{{ 'header.general.login' | t }}{% endif %}</span>
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 20.5C5.45 20.5 4.97933 20.3043 4.588 19.913C4.196 19.521 4 19.05 4 18.5C4 17.95 4.196 17.479 4.588 17.087C4.97933 16.6957 5.45 16.5 6 16.5C6.55 16.5 7.02067 16.6957 7.412 17.087C7.804 17.479 8 17.95 8 18.5C8 19.05 7.804 19.521 7.412 19.913C7.02067 20.3043 6.55 20.5 6 20.5ZM16 20.5C15.45 20.5 14.9793 20.3043 14.588 19.913C14.196 19.521 14 19.05 14 18.5C14 17.95 14.196 17.479 14.588 17.087C14.9793 16.6957 15.45 16.5 16 16.5C16.55 16.5 17.021 16.6957 17.413 17.087C17.8043 17.479 18 17.95 18 18.5C18 19.05 17.8043 19.521 17.413 19.913C17.021 20.3043 16.55 20.5 16 20.5ZM5.15 4.5L7.55 9.5H14.55L17.3 4.5H5.15ZM4.2 2.5H18.95C19.3333 2.5 19.625 2.67067 19.825 3.012C20.025 3.354 20.0333 3.7 19.85 4.05L16.3 10.45C16.1167 10.7833 15.8707 11.0417 15.562 11.225C15.254 11.4083 14.9167 11.5 14.55 11.5H7.1L6 13.5H18V15.5H6C5.25 15.5 4.68333 15.1707 4.3 14.512C3.91667 13.854 3.9 13.2 4.25 12.55L5.6 10.1L2 2.5H0V0.5H3.25L4.2 2.5Z" fill="white"/>
+                  </svg>
+                <div class="main-header-wishlist">
+                  Cart
+                </div>
+              </a>
+            </li>
+          {%- endif -%}
+
+     
         </ul>
       </div>
     </div>
