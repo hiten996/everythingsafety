@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'gilroy-regular';
+    src: url('{{ 'gilroy-regular-webfont.woff2' | file_url  }}') format('woff2'),
+         url('{{ 'gilroy-regular-webfont.woff' | file_url  }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
   font-family: 'NexaBold';
     src:  url('{{ 'NexaBold.ttf.woff' | file_url  }}') format('woff'),
     url('{{ 'NexaBold.ttf.svg#NexaBold' | file_url  }}') format('svg'),
