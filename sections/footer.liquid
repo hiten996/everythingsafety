@@ -207,11 +207,13 @@
                 </li>
               </ul>
             </div>
-            <div class="main-footer-nav">
-              <div><span>Support</span></div>
-              <div><span>Privacy & Cookies</span></div>
-              <div><span>Accessibility</span></div>
-            </div>
+            <ul class="main-footer-nav">
+                  {%- for link in section.settings.botoom_menu.links -%}
+                  <li>
+                  <a href="{{ link.url }}" >{{ link.title }}</a>
+                  </li>
+                  {%- endfor -%}
+            </ul>
           </div>
         </div>
       </div>
