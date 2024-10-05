@@ -82,17 +82,17 @@ the underlying logic of the menu.
       {% endif %}
       <div class="right_side_top_bar">
         {% render 'social-media' %}
-
+      {%- if section.settings.header != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
         <ul class="menu_top">
-                {%- if section.settings.header != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
               {%- for link in section.settings.secondary_menu.links -%}
                 <li>
                   <a href="{{ link.url }}" class="bold link-faded-reverse">{{ link.title }}</a>
                 </li>
               {%- endfor -%}
-            </ul>
-          </nav>
+        </ul>
         {%- endif -%}
+        
+      </div>
     </div>
 </div>
   
