@@ -84,7 +84,7 @@ the underlying logic of the menu.
         {% render 'social-media' %}
 
         <ul class="menu_top">
-            {%- for link in section.settings.menu.links -%}
+            {%- for link in section.settings.menu1.links -%}
             <li>
               <a href="{{ link.url }}" >{{ link.title }}</a>
             </li>
@@ -267,8 +267,7 @@ the underlying logic of the menu.
             {%- render 'icon' with 'hamburger' -%}
           </button>
 
-          <div class="main-header-nav">
-  
+         
           <div class="suv-main-header-nav">
                 {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
             <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
