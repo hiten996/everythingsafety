@@ -77,7 +77,9 @@ the underlying logic of the menu.
 <height-observer variable="header">
 <div class="top_bar">
     <div class="header__wrapper section   section-blends section-full">
-      <div class="annoucet_bar">PPE, Safety Supplies and FR Workwear</div>
+      {% if section.settings.annoucement %}
+      <div class="annoucet_bar">{{ section.settings.annoucement }}</div>
+      {% endif %}
       <div class="right_side_top_bar">
         {% render 'social-media' %}
 
