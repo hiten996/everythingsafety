@@ -56,6 +56,8 @@ LIQUID
           -%}
           
           {%- case block.type -%}
+            {%- when 'product' -%}
+                {%- render 'product-card', product: block.settings.product, stacked: true, position: forloop.index, show_badges: true -%}
             {%- when 'image' -%}
               {%- if block.settings.image -%}
                 {%- capture sizes -%}(max-width: 699px) 100vw, min({{ 390 | times: block.settings.desktop_column_span }}px, {{ 25 | times: block.settings.desktop_column_span }}vw){%- endcapture -%}
