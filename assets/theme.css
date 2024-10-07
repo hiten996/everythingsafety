@@ -10114,7 +10114,7 @@ store-header .header__wrapper {
   background-color: #6E6E6E14;
 }
 .collection__facets-scroller .facets-vertical{
-  border: 1px solid black;
+  border: 1px solid #6E6E6E52;
   padding: 24px 20px;
   border-radius: 16px;
 }
