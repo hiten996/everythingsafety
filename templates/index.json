@@ -379,6 +379,12 @@
             "overlay_opacity": 0
           }
         },
+        "product_wXkpwW": {
+          "type": "product",
+          "settings": {
+            "product": "10-ton-hydraulic-bearing-separator-kit-with-gear-puller"
+          }
+        },
         "image_7i9QMP": {
           "type": "image",
           "settings": {
@@ -470,6 +476,7 @@
       },
       "block_order": [
         "image_zUgjTU",
+        "product_wXkpwW",
         "image_7i9QMP",
         "image_zYXkF8",
         "image_zMgwXK",
