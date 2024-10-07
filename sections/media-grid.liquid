@@ -60,7 +60,7 @@ LIQUID
           {%- case block.type -%}
             {%- when 'product' -%}
             <div>
-                {%- render 'product-card', product: block.settings.product, stacked: true, position: forloop.index, show_badges: true -%}
+                {%- render 'product-card', product: block.settings.product, position: forloop.index-%}
               </div>
             {%- when 'image' -%}
               {%- if block.settings.image -%}
