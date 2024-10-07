@@ -10119,5 +10119,5 @@ store-header .header__wrapper {
   border-radius: 16px;
 }
 .collection__facets .facets-vertical .accordion{
-      border-block-start-width: none;
+      border-block-start-width: 0px;;
 }
