@@ -127,7 +127,12 @@ Supported variables
 
           <button type="button" class="text-with-icon group" aria-labelledby="{{ section.id }}-sort-by-label {{ sort_by_popover_id }}-value" aria-controls="{{ sort_by_popover_id }}" aria-expanded="false">
             <span id="{{ sort_by_popover_id }}-value" class="reversed-link">{{- selected_sort_by.name -}}</span>
-            <span class="circle-chevron group-hover:colors group-expanded:rotate">{%- render 'icon' with 'chevron-bottom-small', direction_aware: true -%}</span>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.7">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4502 7.65907L10.9944 11.98L6.53864 7.65907C6.09077 7.22475 5.36728 7.22475 4.9194 7.65907C4.47153 8.09339 4.47153 8.79498 4.9194 9.2293L10.1905 14.3409C10.6384 14.7752 11.3619 14.7752 11.8098 14.3409L17.0809 9.2293C17.5288 8.79498 17.5288 8.09339 17.0809 7.65907C16.633 7.23588 15.8981 7.22475 15.4502 7.65907Z" fill="#6E6E6E"/>
+                </g>
+              </svg>
+
           </button>
 
           <x-popover id="{{ sort_by_popover_id }}" class="popover" close-on-listbox-select anchor-horizontal="end" anchor-vertical="end">
