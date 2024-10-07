@@ -10099,3 +10099,11 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 store-header .header__wrapper {
   background: linear-gradient(89.95deg, #FF872E 67.23%, #FDBD0A 111.27%);
 }
+
+
+
+
+
+.collection-title-main{
+  display: flex;
+}
