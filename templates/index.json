@@ -382,80 +382,17 @@
         "product_wXkpwW": {
           "type": "product",
           "settings": {
-            "product": "10-ton-hydraulic-bearing-separator-kit-with-gear-puller"
+            "product": "10-ton-hydraulic-bearing-separator-kit-with-gear-puller",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1
           }
         },
         "image_7i9QMP": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/image_26.png",
             "title": "Karam Safety Helmet",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_zYXkF8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image_27.png",
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_zMgwXK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image_28.png",
-            "title": "Promote your products",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_dTmTjQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image_3.png",
-            "title": "Promote your products",
             "heading_tag": "h4",
             "link_url": "",
             "link_text": "",
@@ -477,10 +414,7 @@
       "block_order": [
         "image_zUgjTU",
         "product_wXkpwW",
-        "image_7i9QMP",
-        "image_zYXkF8",
-        "image_zMgwXK",
-        "image_dTmTjQ"
+        "image_7i9QMP"
       ],
       "settings": {
         "full_width": true,
