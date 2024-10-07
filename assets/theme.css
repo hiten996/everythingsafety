@@ -10109,3 +10109,6 @@ store-header .header__wrapper {
   justify-content: space-between;
   width: 100%;
 }
+.sort-main-collection{
+  padding: 10px;
+}
