@@ -88,7 +88,10 @@ store-header .main-location-section-header{
   padding: 50px 0px 0 30px;
   position: relative;
 }
-
+.collection-list img {
+  object-fit: contain;
+  object-position: bottom right;
+}
 .shopify-section--image-with-text-overlay .main-sub-content p{
   width: 320px;
   font-size: 18px;
@@ -423,4 +426,8 @@ header {
 .shopify-section--featured-collection .section .section-stack {
   padding-block-start: calc(var(--background-differs-from-previous)* var(--calculated-section-spacing-block-start));
   border-top: 1px solid #394144;
+}
+.media-product .content-over-media {
+    gap: 0;
+    display: block;
 }
