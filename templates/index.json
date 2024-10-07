@@ -75,15 +75,9 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "best-selling",
         "products": [
-          "ariat-fr-m4-duralight-stretch",
-          "ariat-fr-m7-durastretch-jean",
-          "old-ariat-mens-fr-m4-relaxed-basic-boot-cut-jean",
-          "ariat-groundbreaker-boot",
-          "ariat-mens-workhog-bncf-boot",
-          "battle-buddy-knife-1799",
-          "ariat-mens-fr-m4-shale-jean"
+
         ],
         "full_width": true,
         "stack_products": false,
