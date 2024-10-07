@@ -10118,3 +10118,6 @@ store-header .header__wrapper {
   padding: 24px 20px;
   border-radius: 16px;
 }
+.collection__facets .facets-vertical .accordion{
+      border-block-start-width: none;
+}
