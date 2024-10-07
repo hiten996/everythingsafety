@@ -386,11 +386,38 @@
             "desktop_column_span": 1,
             "desktop_row_span": 1
           }
+        },
+        "product_YEyBFN": {
+          "type": "product",
+          "settings": {
+            "product": "100-pc-11-black-cable-ties",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1
+          }
+        },
+        "product_jWmefw": {
+          "type": "product",
+          "settings": {
+            "product": "1287fr-lz-rd-6xl",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1
+          }
+        },
+        "product_ekF38t": {
+          "type": "product",
+          "settings": {
+            "product": "19-piece-extra-large-custom-build-bush-bearing-seal-driver-set",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1
+          }
         }
       },
       "block_order": [
         "image_zUgjTU",
-        "product_wXkpwW"
+        "product_wXkpwW",
+        "product_YEyBFN",
+        "product_jWmefw",
+        "product_ekF38t"
       ],
       "settings": {
         "full_width": true,
