@@ -45,7 +45,7 @@ LIQUID
 <div {% render 'section-properties', narrow: section.settings.reduce_width %}>
   <media-grid class="media-grid">
     {%- for block in section.blocks -%}
-      <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="media-grid__item shadow group" reveal-js style="--media-grid-column-span: {{ block.settings.desktop_column_span }}; --media-grid-row-span: {{ block.settings.desktop_row_span }}" {{ block.shopify_attributes }}>
+      <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="media-{{ block.type }}  media-grid__item shadow group" reveal-js style="--media-grid-column-span: {{ block.settings.desktop_column_span }}; --media-grid-row-span: {{ block.settings.desktop_row_span }}" {{ block.shopify_attributes }}>
         <div id="media-grid-{{ block.id }}" {% render 'surface', class: 'content-over-media rounded', background: block.settings.background, background_gradient: block.settings.background_gradient, text_color: block.settings.text_color %}>
           {%- liquid
             assign loading_strategy = nil
@@ -57,9 +57,7 @@ LIQUID
           
           {%- case block.type -%}
             {%- when 'product' -%}
-            <div class="media-product">
                 {%- render 'product-card-inner', product: block.settings.product, position: 1 -%}
-              </div>
             {%- when 'image' -%}
               {%- if block.settings.image -%}
                 {%- capture sizes -%}(max-width: 699px) 100vw, min({{ 390 | times: block.settings.desktop_column_span }}px, {{ 25 | times: block.settings.desktop_column_span }}vw){%- endcapture -%}
