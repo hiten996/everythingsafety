@@ -43,6 +43,9 @@ LIQUID
 {%- endcomment -%}
 
 <div {% render 'section-properties', narrow: section.settings.reduce_width %}>
+  {%- assign link_url = section.settings.link_url | default: section.settings.collection.url -%}
+    {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: link_url -%}
+
   <media-grid class="media-grid">
     {%- for block in section.blocks -%}
       <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="media-{{ block.type }}  media-grid__item shadow group" reveal-js style="--media-grid-column-span: {{ block.settings.desktop_column_span }}; --media-grid-row-span: {{ block.settings.desktop_row_span }}" {{ block.shopify_attributes }}>
