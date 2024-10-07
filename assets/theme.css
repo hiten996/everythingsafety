@@ -10113,3 +10113,8 @@ store-header .header__wrapper {
   padding: 10px;
   background-color: #6E6E6E14;
 }
+.collection__facets-scroller .facets-vertical{
+  border: 1px solid black;
+  padding: 24px 20px;
+  border-radius: 16px;
+}
