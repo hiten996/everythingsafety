@@ -420,6 +420,10 @@
         "product_ekF38t"
       ],
       "settings": {
+        "subheading": "",
+        "title": "New Arrivals",
+        "content": "",
+        "link_url": "",
         "full_width": true,
         "reduce_width": false,
         "desktop_row_height": 290,
