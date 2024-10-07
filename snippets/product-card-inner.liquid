@@ -104,9 +104,9 @@ Supported variables
                 </button>
               </div> -->
 
-              <div class="pointer-coarse:hidden">
+              <!-- <div class="pointer-coarse:hidden">
                 {%- render 'button', type: 'submit', content: quick_add_label -%}
-              </div>
+              </div> -->
             {%- endform -%}
           {%- else -%}
             {%- capture quick_buy_id -%}quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
@@ -117,9 +117,9 @@ Supported variables
               </button>
             </div> -->
 
-            <div class="pointer-coarse:hidden">
+            <!-- <div class="pointer-coarse:hidden">
               {%- render 'button', content: quick_add_label, aria_controls: quick_buy_id -%}
-            </div>
+            </div> -->
 
             <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
               {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
