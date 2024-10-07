@@ -122,6 +122,7 @@
           "type": "collection",
           "settings": {
             "collection": "best-selling",
+            "image": "shopify://shop_images/eye-protrction.png",
             "subheading": "",
             "title": "Eye Protection",
             "url": "",
@@ -137,6 +138,7 @@
           "type": "collection",
           "settings": {
             "collection": "best-selling",
+            "image": "shopify://shop_images/head.png",
             "subheading": "",
             "title": "Head & FaceProtection",
             "url": "",
@@ -152,6 +154,7 @@
           "type": "collection",
           "settings": {
             "collection": "best-selling",
+            "image": "shopify://shop_images/hand-protection.png",
             "subheading": "",
             "title": "Hand Protection",
             "url": "",
