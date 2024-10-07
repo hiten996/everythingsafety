@@ -112,9 +112,9 @@
             "url": "",
             "heading_tag": "h2",
             "text_position": "place-self-start text-start",
-            "text_color": "#ffffff",
+            "text_color": "#394144",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection-3": {
@@ -126,9 +126,9 @@
             "url": "",
             "heading_tag": "h2",
             "text_position": "place-self-start text-start",
-            "text_color": "#ffffff",
+            "text_color": "#394144",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_xRmHCY": {
@@ -140,9 +140,9 @@
             "url": "",
             "heading_tag": "h2",
             "text_position": "place-self-start text-start",
-            "text_color": "#ffffff",
+            "text_color": "#394144",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_wk8XnE": {
@@ -154,9 +154,9 @@
             "url": "",
             "heading_tag": "h4",
             "text_position": "place-self-start text-start",
-            "text_color": "#ffffff",
+            "text_color": "#394144",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
