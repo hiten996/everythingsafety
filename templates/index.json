@@ -114,6 +114,7 @@
             "text_position": "place-self-start text-start",
             "text_color": "#394144",
             "overlay_color": "#000000",
+            "bg_color": "#ffe9d0",
             "overlay_opacity": 0
           }
         },
@@ -128,6 +129,7 @@
             "text_position": "place-self-start text-start",
             "text_color": "#394144",
             "overlay_color": "#000000",
+            "bg_color": "#000000",
             "overlay_opacity": 0
           }
         },
@@ -142,6 +144,7 @@
             "text_position": "place-self-start text-start",
             "text_color": "#394144",
             "overlay_color": "#000000",
+            "bg_color": "#000000",
             "overlay_opacity": 0
           }
         },
@@ -156,6 +159,7 @@
             "text_position": "place-self-start text-start",
             "text_color": "#394144",
             "overlay_color": "#000000",
+            "bg_color": "#ffe9d0",
             "overlay_opacity": 0
           }
         }
