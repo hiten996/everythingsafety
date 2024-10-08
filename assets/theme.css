@@ -10126,6 +10126,9 @@ store-header .header__wrapper {
   padding: 24px 0px;
   color: #394144;
 }
+.facets-vertical .accordion .accordion__content .checkbox-container{
+  padding: 9px 0px;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
