@@ -10122,6 +10122,9 @@ store-header .header__wrapper {
 .collection__results .facets-summary .collection-title-main{
   padding-bottom: 36px;
 }
+.facets-vertical .accordion .accordion__toggle{
+  padding: 0px;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
