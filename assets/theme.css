@@ -10135,7 +10135,7 @@ store-header .header__wrapper {
 .facets-vertical .accordion .accordion__content .checkbox-container{
   padding: 9px 0px;
 }
-.product .product-gallery--mobile-expanded img{
+.product .product-gallery--mobile-expanded .product-gallery__thumbnail img{
   border: 1px solid #6E6E6E52;
     padding: 7px;
     background-color: #6E6E6E52;
