@@ -10143,6 +10143,9 @@ store-header .header__wrapper {
 .product-gallery__thumbnail:after{
   content: none;
 }
+.product-gallery--desktop-thumbnails-left .product-gallery__thumbnail-list{
+  gap: 16px;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
