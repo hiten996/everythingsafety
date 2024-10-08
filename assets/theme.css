@@ -10117,13 +10117,10 @@ store-header .header__wrapper {
   padding-block-start: 20px;
 }
 .shopify-section--main-collection .collection{
-      margin-block-start: 48px;
+  margin-block-start: 48px;
 }
 .collection__results .facets-summary .collection-title-main{
   padding-bottom: 36px;
-}
-.facets-vertical .accordion .accordion__toggle{
-  padding: 0px;
 }
 .sort-main-collection{
   padding: 10px;
@@ -10132,7 +10129,7 @@ store-header .header__wrapper {
 }
 .collection__facets-scroller .facets-vertical{
   border: 1px solid #6E6E6E52;
-  padding: 24px 20px;
+  padding: 0px 20px;
   border-radius: 16px;
 }
 .collection__facets .facets-vertical .accordion{
