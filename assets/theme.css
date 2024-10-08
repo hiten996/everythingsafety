@@ -10119,6 +10119,9 @@ store-header .header__wrapper {
 .shopify-section--main-collection .collection{
       margin-block-start: 48px;
 }
+.collection__results .facets-summary .collection-title-main{
+  padding-bottom: 36px;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
