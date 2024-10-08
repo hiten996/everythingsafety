@@ -10125,6 +10125,7 @@ store-header .header__wrapper {
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
+  border-radius: 6px;
 }
 .collection__facets-scroller .facets-vertical{
   border: 1px solid #6E6E6E52;
