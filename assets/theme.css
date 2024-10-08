@@ -10117,10 +10117,13 @@ store-header .header__wrapper {
   padding-block-start: 20px;
 }
 .shopify-section--main-collection .collection{
-  margin-block-start: 48px;
+      margin-block-start: 48px;
 }
 .collection__results .facets-summary .collection-title-main{
   padding-bottom: 36px;
+}
+.facets-vertical .accordion .accordion__toggle{
+  padding: 24px;
 }
 .sort-main-collection{
   padding: 10px;
