@@ -10140,6 +10140,9 @@ store-header .header__wrapper {
     padding: 7px;
     background-color: #6E6E6E52;
 }
+.product-gallery__thumbnail:after{
+  content: none;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
