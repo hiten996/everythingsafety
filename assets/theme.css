@@ -10113,6 +10113,9 @@ store-header .header__wrapper {
   font-size: 20px;
   font-weight: 700;
 }
+.shopify-section--main-collection .collection{
+      margin-block-start: 20px;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
