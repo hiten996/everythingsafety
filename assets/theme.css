@@ -10126,6 +10126,9 @@ store-header .header__wrapper {
   padding: 24px 0px 18px 0px;
   color: #394144;
 }
+.collection--filters-sidebar .collection__results .product-list{
+  gap: 20px;
+}
 .facets-vertical .accordion .accordion__content {
   margin-block-end: 0px;
 }
