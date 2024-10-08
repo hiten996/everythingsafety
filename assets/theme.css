@@ -10135,16 +10135,16 @@ store-header .header__wrapper {
 .facets-vertical .accordion .accordion__content .checkbox-container{
   padding: 9px 0px;
 }
-.product .product-gallery--mobile-expanded .product-gallery__thumbnail img{
-  border: 1px solid #6E6E6E52;
-    padding: 7px;
-    background-color: #6E6E6E52;
-}
 .product-gallery__thumbnail:after{
   content: none;
 }
 .product-gallery--desktop-thumbnails-left .product-gallery__thumbnail-list{
   gap: 16px;
+}
+.product-gallery--mobile-expanded .product-gallery__thumbnail-list-wrapper .product-gallery__thumbnail{
+  border: 1px solid #6E6E6E52;
+    padding: 7px;
+    background-color: #6e6e6e52;
 }
 .sort-main-collection{
   padding: 10px;
