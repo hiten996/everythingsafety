@@ -10124,6 +10124,7 @@ store-header .header__wrapper {
 }
 .facets-vertical .accordion .accordion__toggle{
   padding: 24px 0px;
+  color: #394144;
 }
 .sort-main-collection{
   padding: 10px;
