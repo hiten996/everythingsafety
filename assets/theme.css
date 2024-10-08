@@ -10109,6 +10109,10 @@ store-header .header__wrapper {
   justify-content: space-between;
   width: 100%;
 }
+.colletion-title-sub{
+  font-size: 20px;
+  font-weight: 700;
+}
 .sort-main-collection{
   padding: 10px;
   background-color: #6E6E6E14;
