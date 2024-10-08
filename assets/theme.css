@@ -10145,6 +10145,9 @@ store-header .header__wrapper {
   border: 1px solid #6E6E6E52;
     padding: 7px;
     background-color: #6e6e6e52;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
 }
 .sort-main-collection{
   padding: 10px;
