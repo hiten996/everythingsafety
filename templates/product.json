@@ -34,6 +34,11 @@
             "show_taxes_notice": false
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "rating": {
           "type": "rating",
           "settings": {
@@ -67,11 +72,6 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -89,12 +89,12 @@
         "title",
         "badges",
         "price",
+        "quantity_selector",
         "rating",
         "payment_terms",
         "separator",
         "description",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons"
       ],
       "settings": {
