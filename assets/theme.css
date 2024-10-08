@@ -10123,7 +10123,7 @@ store-header .header__wrapper {
   padding-bottom: 36px;
 }
 .facets-vertical .accordion .accordion__toggle{
-  padding: 24px 0px;
+  padding: 24px 0px 18px 0px;
   color: #394144;
 }
 .facets-vertical .accordion .accordion__content {
