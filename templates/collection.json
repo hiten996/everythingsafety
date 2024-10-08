@@ -19,7 +19,7 @@
         "show_collection_description": true,
         "show_collection_image": true,
         "collection_title_size": "h0",
-        "image_size": "lg",
+        "image_size": "sm",
         "image": "shopify://shop_images/Mask_group_3.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
