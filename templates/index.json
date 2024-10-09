@@ -438,7 +438,7 @@
         "blog_mY6AhK": {
           "type": "blog",
           "settings": {
-            "blog": "news",
+            "blog": "",
             "posts_count": 3,
             "stack_items": false
           }
