@@ -37,6 +37,7 @@
     "show_quick_buy": false,
     "product_color_display": "swatch",
     "product_info_alignment": "start",
+    "cart_type": "drawer",
     "cart_icon": "shopping_basket",
     "social_facebook": "https://www.facebook.com/",
     "social_twitter": "https://x.com",
