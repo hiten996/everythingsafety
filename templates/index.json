@@ -342,7 +342,7 @@
         "button_8c7WJh"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "lg",
