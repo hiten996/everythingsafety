@@ -222,8 +222,13 @@ store-header .main-location-section-header{
   gap: 0;
 }
 .header__main-nav {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: -1;
+}
+.predictive-search [slot=results] {
+  padding: 20px;
+  background: #fff;
+  color: #6E6E6E;
 }
 .predictive-search {
     min-width: 0;
@@ -236,10 +241,7 @@ store-header .main-location-section-header{
     box-shadow: 0 4px 10px 0 #00000040;
     width: 600px;
 }
-.predictive-search [slot="results"]{
-  padding: 20px;
-  background: #ddd;
-}
+
 .suv-main-header-nav ul {
   width: auto !important;
   padding: 0;
