@@ -447,6 +447,7 @@
       "block_order": [
         "blog_mY6AhK"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "show_excerpt": true,
