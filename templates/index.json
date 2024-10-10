@@ -23,7 +23,7 @@
             "title": "Maximum Comfort Sweatband",
             "heading_tag": "h0",
             "button_text": "View All Products",
-            "button_link": "",
+            "button_link": "shopify://collections",
             "text_color": "#ffffff",
             "button_background": "#ff872e",
             "button_text_color": "#ffffff",
