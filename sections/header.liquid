@@ -162,7 +162,7 @@ the underlying logic of the menu.
         <img src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v1.png" alt="Search">
       </button>
       {% endcomment %}
-      <form action="{{ routes.search_url }}" method="get" class="v-stack gap-5 sm:gap-8" role="search">
+      <form action="{{ routes.search_url }}" method="get" class="search-container" role="search">
       <input type="search" name="q" class="search-input" placeholder="{{ 'search.general.search_placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="{{ 'search.general.title' | t | escape }}">
       <button type="reset" class="text-subdued">{{ 'search.general.clear' | t }}</button>
       <button type="button" is="close-button" class="search-button">
