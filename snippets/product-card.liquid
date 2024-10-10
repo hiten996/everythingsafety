@@ -86,7 +86,9 @@ Supported variables
      {{ product.media.size  }}
         
         {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: main_media_loading_strategy, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
-          {% if product.media.size >= 1 %}
+       {% if product.media.size > 0 %}
+        {% endif %}
+        {% if product.media.size >= 1 %}
                  {{ 'image' | placeholder_svg_tag }}
         {% endif %}
         {%- if show_secondary_image and product.media.size > 1 -%}
