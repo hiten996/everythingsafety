@@ -44,7 +44,7 @@ Supported variables
       {%- else -%}
         <p class="bold">{{ line_item.product.title | default: line_item.title }}</p>
       {%- endif -%}
-      hi
+      <span class="item-avalability-mini-cart">Only 9 Item Available</span>
 
       {%- render 'price-list', line_item: line_item -%}
     </div>
