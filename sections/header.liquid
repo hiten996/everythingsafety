@@ -172,10 +172,12 @@ the underlying logic of the menu.
       {%- endcomment -%}
 
       <div class="header__secondary-nav">
+        {% if customer %}
         <div class="main-header-navigation">
-          <a href="/">Order</a>
+          <a href="/account">Order</a>
           <!-- <a href="/">Credits</a> -->
         </div>
+        {% endif %}
         <ul class="header__icon-list">
               <!-- <li class="search-mobile">
         <a href="{{ routes.search_url }}" class="hidden tap-area sm:block /" aria-controls="search-drawer">
