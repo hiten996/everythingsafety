@@ -157,19 +157,17 @@ the underlying logic of the menu.
   
 
     <div class="search-container">
-      <input type="text" placeholder="Search our entire store by category, product..." class="search-input">
+{% comment %}      <input type="text" placeholder="Search our entire store by category, product..." class="search-input">
       <button class="search-button">
         <img src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v1.png" alt="Search">
       </button>
+      {% endcomment %}
       <form action="{{ routes.search_url }}" method="get" class="v-stack gap-5 sm:gap-8" role="search">
-    <div class="search-input">
-      <input type="search" name="q" placeholder="{{ 'search.general.search_placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="{{ 'search.general.title' | t | escape }}">
+      <input type="search" name="q" class="search-input" placeholder="{{ 'search.general.search_placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="{{ 'search.general.title' | t | escape }}">
       <button type="reset" class="text-subdued">{{ 'search.general.clear' | t }}</button>
-      <button type="button" is="close-button">
-        <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>
-        {%- render 'icon' with 'close' -%}
+      <button type="button" is="close-button" class="search-button">
+        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v1.png" alt="Search">
       </button>
-    </div>
 
     <style>
       #shopify-section-{{ section.id }} {
