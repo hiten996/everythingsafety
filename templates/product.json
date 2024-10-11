@@ -91,7 +91,7 @@
             "option_name": "",
             "option_value_metafield": "custom.variation_value",
             "products": "{{ product.metafields.custom.variation_products.value }}",
-            "selector_style": "swatch"
+            "selector_style": "variant_image"
           }
         }
       },
