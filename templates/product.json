@@ -87,6 +87,7 @@
         },
         "product_variations_jKjEzH": {
           "type": "product_variations",
+          "disabled": true,
           "settings": {
             "option_name": "",
             "option_value_metafield": "custom.variation_value",
