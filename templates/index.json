@@ -105,7 +105,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "best-selling",
+            "collection": "wokrwear",
             "image": "shopify://shop_images/image_21.png",
             "subheading": "",
             "title": "Workwear",
@@ -121,7 +121,7 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "best-selling",
+            "collection": "eye-protection",
             "image": "shopify://shop_images/eye-protrction.png",
             "subheading": "",
             "title": "Eye Protection",
@@ -137,7 +137,7 @@
         "collection_xRmHCY": {
           "type": "collection",
           "settings": {
-            "collection": "best-selling",
+            "collection": "head-face-protection",
             "image": "shopify://shop_images/head.png",
             "subheading": "",
             "title": "Head & FaceProtection",
@@ -153,7 +153,7 @@
         "collection_wk8XnE": {
           "type": "collection",
           "settings": {
-            "collection": "best-selling",
+            "collection": "hand-protection",
             "image": "shopify://shop_images/hand-protection.png",
             "subheading": "",
             "title": "Hand Protection",
