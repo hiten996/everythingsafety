@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -23,7 +23,7 @@
             "title": "Maximum Comfort Sweatband",
             "heading_tag": "h0",
             "button_text": "View All Products",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://collections/all",
             "text_color": "#ffffff",
             "button_background": "#ff872e",
             "button_text_color": "#ffffff",
