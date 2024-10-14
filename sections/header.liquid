@@ -417,6 +417,10 @@ the underlying logic of the menu.
               </div>
         </a>
       </li> -->
+              <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
+            <span class="sr-only">{{ 'header.general.menu' | t }}</span>
+            {%- render 'icon' with 'hamburger' -%}
+          </button>
           {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
             <li class="hidden md:block shrink-0">
               {%- render 'localization-selector', type: 'country', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, popover_vertical_position: 'end' -%}
@@ -490,13 +494,10 @@ the underlying logic of the menu.
       </div>
     </div>
   </store-header>
-     <div class="section   section-blends section-full">
+     <div class="section   section-blends section-full header__main-nav-outer">
       <div class="header__main-nav">
         <div class="header__icon-list">
-          <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
-            <span class="sr-only">{{ 'header.general.menu' | t }}</span>
-            {%- render 'icon' with 'hamburger' -%}
-          </button>
+      
 
          
           <div class="suv-main-header-nav">
