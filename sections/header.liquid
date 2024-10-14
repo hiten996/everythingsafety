@@ -409,14 +409,14 @@ the underlying logic of the menu.
         </div>
         {% endif %}
         <ul class="header__icon-list">
-              <!-- <li class="search-mobile">
+              {% comment %} <li class="search-mobile">
         <a href="{{ routes.search_url }}" class="hidden tap-area sm:block /" aria-controls="search-drawer">
           {% render 'icon' with 'search' %}
            <div class="main-header-heading">
                 Search
               </div>
         </a>
-      </li> -->
+      </li> {% endcomment %}
               <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
             <span class="sr-only">{{ 'header.general.menu' | t }}</span>
             {%- render 'icon' with 'hamburger' -%}
