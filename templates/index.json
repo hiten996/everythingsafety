@@ -38,6 +38,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/slider-banner.jpg",
+            "mobile_image": "shopify://shop_images/Maskgroup_6.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
