@@ -57,6 +57,9 @@
         </reveal-items>
       </scroll-carousel>
 
+
+      {{  section.settings.stack_products }}
+
       {%- if section.settings.stack_products == false -%}
         {%- if section.settings.show_progress_bar -%}
           {%- assign default_progress = section.settings.products_per_row_desktop | times: 1.0 | divided_by: section.settings.products_count -%}
