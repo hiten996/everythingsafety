@@ -62,7 +62,18 @@
   <div class="product-similar-buy">
     <div class="main-similar-product">
       <div class="main-similar-product-image">
-        <div class="sub-product-images">
+
+      {% for namespace in product.metafields.custom.bundle_products %}
+        <h2>Namespace: {{ namespace[0] }}</h2>
+          <ul>
+        {% for key in namespace[1] %}
+          <li>{{ key }}: {{ namespace[1][key].value }}</li>
+         {% endfor %}
+          </ul>
+      {% endfor %}
+
+        
+        <div class="sub-product-images">        
           <img src="https://cdn.shopify.com/s/files/1/0900/8562/2062/files/image_26_1.png?v=1728627414">
         </div>
         <div>
