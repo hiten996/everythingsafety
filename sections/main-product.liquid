@@ -63,13 +63,8 @@
     <div class="main-similar-product">
       <div class="main-similar-product-image">
 
-      {% for namespace in product.metafields.custom.bundle_products.value %}
-        <h2>Namespace: {{ namespace }}</h2>
-          <ul>
-        {% for key in namespace[1] %}
-          <li>{{ key }}: {{ namespace[1][key].value }}</li>
-         {% endfor %}
-          </ul>
+      {% for product1 in product.metafields.custom.bundle_products.value %}
+        <h2>Namespace: {{ product1.title }}</h2>
       {% endfor %}
 
         
