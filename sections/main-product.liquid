@@ -71,7 +71,7 @@
   
   <!-- Display the bundled product's featured image -->
   <div class="bundled-product-image">
-    <img src="{{ bundled_product1.featured_image.src | img_url: 'medium' }}" alt="{{ bundled_product.title }}">
+    <img src="{{ bundled_product.featured_image.src | img_url: 'medium' }}" alt="{{ bundled_product.title }}">
   </div>
 {% endfor %}
 
