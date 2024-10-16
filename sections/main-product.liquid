@@ -61,6 +61,7 @@
   
   <div class="product-similar-buy">
     {% if product.metafields.custom.bundle_products  %}
+            {% form 'product' %}
     <div class="main-similar-product">
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
@@ -79,10 +80,14 @@
           </span>
         </div>
         <div>
+
           <button type="submit" class="button button--xl button--secondary" is="custom-button"><span>Add to cart</span></button>
+
         </div>
       </div>
     </div>
+    {% endform %}
+              
       {% endif %}
     <div class="main-right-product-content">
       <div>
