@@ -64,9 +64,9 @@
       <div class="main-similar-product-image">
 
       {% for product_handle in product.metafields.custom.bundle_products.value %}
-  {% assign bundled_product = all_products[product_handle] %}
+          {% assign bundled_product = all_products[product_handle] %}
   
-  <!-- Display the bundled product's title -->
+  
   <h2>{{ bundled_product.title }}</h2>
   
   <!-- Display the bundled product's featured image -->
