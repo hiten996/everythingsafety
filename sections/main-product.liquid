@@ -60,6 +60,7 @@
   </product-rerender>
   
   <div class="product-similar-buy">
+    {% if product.metafields.custom.bundle_products  %}
     <div class="main-similar-product">
       <div class="main-similar-product-image">
       {% for product_handle in product.metafields.custom.bundle_products.value %}
@@ -79,6 +80,7 @@
         </div>
       </div>
     </div>
+      {% endif %}
     <div class="main-right-product-content">
       <div>
         <span class="sub-right-product-content">
