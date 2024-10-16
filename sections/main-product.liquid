@@ -66,18 +66,16 @@
       {% for product_handle in product.metafields.custom.bundle_products.value %}
   {% assign bundled_product = all_products[product_handle] %}
   
-  <!-- Output the bundled product title to check if it's correctly fetched -->
   <h2>{{ bundled_product.title }}</h2>
   
-  <!-- Debug: Output the full product object -->
-  <pre>{{ bundled_product | json }}</pre>
-  
-  <!-- Check for featured image -->
-  {% if bundled_product.featured_image %}
-    <img src="{{ bundled_product.featured_image.src | img_url: 'medium' }}" alt="{{ bundled_product.title }}">
-  {% else %}
-    <p>No Image Available</p>
-  {% endif %}
+  <div class="bundled-product-image">
+    {% if bundled_product.featured_image %}
+      <img src="{{ bundled_product.featured_image.src | img_url: 'medium' }}" alt="{{ bundled_product.title }}">
+    {% else %}
+      <!-- Display a fallback image if no featured image is set -->
+      <img src="https://via.placeholder.com/300" alt="No Image Available">
+    {% endif %}
+  </div>
 {% endfor %}
 
         
