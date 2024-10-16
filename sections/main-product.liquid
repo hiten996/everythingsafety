@@ -63,9 +63,17 @@
     <div class="main-similar-product">
       <div class="main-similar-product-image">
 
-      {% for product1 in product.metafields.custom.bundle_products.value %}
-        <h2>Namespace: {{ product1.title }}</h2>
-      {% endfor %}
+      {% for product_handle in product.metafields.custom.bundle_products.value %}
+  {% assign bundled_product = all_products[product_handle] %}
+  
+  <!-- Display the bundled product's title -->
+  <h2>{{ bundled_product.title }}</h2>
+  
+  <!-- Display the bundled product's featured image -->
+  <div class="bundled-product-image">
+    <img src="{{ bundled_product.featured_image.src | img_url: 'medium' }}" alt="{{ bundled_product.title }}">
+  </div>
+{% endfor %}
 
         
         <div class="sub-product-images">        
