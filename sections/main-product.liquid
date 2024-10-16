@@ -67,11 +67,11 @@
           {% assign bundled_product = all_products[product_handle] %}
   
   
-  <h2>{{ bundled_product.title }}</h2>
+  <h2>{{ product_handle.title }}</h2>
   
   <!-- Display the bundled product's featured image -->
   <div class="bundled-product-image">
-    <img src="{{ bundled_product.featured_image.src | img_url: 'medium' }}" alt="{{ bundled_product.title }}">
+    <img src="{{ product_handle.featured_image.src | img_url: 'medium' }}" alt="{{ product_handle.title }}">
   </div>
 {% endfor %}
 
