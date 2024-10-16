@@ -3776,6 +3776,9 @@ var PredictiveSearch = class extends HTMLElement {
     const queryParams = `q=${encodeURIComponent(this._queryInput.value)}&section_id=${this.getAttribute("section-id")}&resources[limit]=10&resources[limit_scope]=each`;
     const nodeElement = new DOMParser().parseFromString(await (await cachedFetch(`${window.Shopify.routes.root}search/suggest?${queryParams}`, { signal: this._abortController.signal })).text(), "text/html");
     this.querySelector('[slot="results"]').replaceWith(document.importNode(nodeElement.querySelector('[slot="results"]'), true));
+
+    document.body.classList.add('search-active');
+
     return this._transitionToSlot("results");
   }
   /**
@@ -3795,6 +3798,7 @@ var PredictiveSearch = class extends HTMLElement {
   _onSearchCleared() {
     this._abortController?.abort();
     this._queryInput.focus();
+    document.body.classList.remove('search-active');
     return this._transitionToSlot("idle");
   }
   /**
