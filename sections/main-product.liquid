@@ -61,7 +61,7 @@
   
   <div class="product-similar-buy">
     {% if product.metafields.custom.bundle_products  %}
-            {% form 'product' %}
+        <form method="post" action="/cart/add" >
     <div class="main-similar-product">
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    {% endform %}
+        </form>
               
       {% endif %}
     <div class="main-right-product-content">
