@@ -63,16 +63,19 @@
     {% if product.metafields.custom.bundle_products  %}
     <div class="main-similar-product">
       <div class="main-similar-product-image">
+        {% assign total_price = 0 %}
       {% for product_handle in product.metafields.custom.bundle_products.value %}
         <div class="bundled-product-image">
             <img src="{{ product_handle.featured_image.src | img_url: 'medium' }}" alt="{{ product_handle.title }}">
         </div>
+        {% assign total_price = total_price | plus: product_handle.price %}
+        
       {% endfor %}  
       </div>
       <div class="main-product-content-with-button">
         <div class="sub-product-content">
           <span>
-            Total Price: $169.00
+            Total Price: {{ total_price | money }}
           </span>
         </div>
         <div>
