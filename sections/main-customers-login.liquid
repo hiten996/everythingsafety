@@ -77,6 +77,13 @@ LIQUID
               {%- endif -%}
 
               {%- if form.posted_successfully? -%}
+
+                <script>
+                    var recoverForm = document.querySelector("#recover");
+                    var loginForm = document.querySelector("#login");
+                    recoverForm.removeAttribute('hidden');
+                    loginForm.setAttribute('hidden', '');
+                </script>
                 {%- assign success_message = 'customer.recover_password.success_message' | t -%}
                 {%- render 'banner', status: 'success', content: success_message -%}
               {%- else -%}
