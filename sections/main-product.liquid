@@ -96,26 +96,24 @@
       <div>
         {% if section.settings.heading %}
         <span class="sub-right-product-content">
-          Seller Promise
           {{ section.settings.heading }}
         </span>
           {% endif %}
         {% if section.settings.subheading %}
-        <p>Sold and fulfilled by:  Everything Safety Pvt Ltd.</p>
-          {{ section.settings.subheading }}
+          <p>{{ section.settings.subheading }}</p>
           {% endif %}
           
         <div class="sub-payment-return-product">
           {% if  section.settings.svg_1 or section.settings.text_1 %}
           <div class="product-secure-payment">
           {{ section.settings.svg_1 }}
-            <span>{{ section.settings.text_1 }}100% Secure Payment</span>
+            <span>{{ section.settings.text_1 }}</span>
           </div>
             {% endif %}
-          {% if  section.settings.svg_1 or section.settings.text_1 %}
+          {% if  section.settings.svg_2 or section.settings.text_2 %}
           <div class="product-secure-payment product-return-policy">
             {{ section.settings.svg_2 }}
-            <span>{{ section.settings.text_2 }}30 Days Return Policy</span>
+            <span>{{ section.settings.text_2 }}</span>
           </div>
             {% endif %}
                 
