@@ -48,6 +48,8 @@
       
         {%- render 'product-gallery', product: product, product_form_id: product_form_id -%}
      {% else %}
+          {{ 'image' | placeholder_svg_tag }}
+        
       {%- endif -%}
 
       {%- render 'product-info', 
