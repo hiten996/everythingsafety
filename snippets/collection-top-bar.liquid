@@ -32,12 +32,13 @@ Supported variables
       </div> -->
     {%- endif -%}
   {%- endif -%}
-
+    {%- if section.settings.filter_layout != 'horizontal' -%}
+          {%- render 'active-facets', results: results -%}
+    {%- endif -%} 
   {%- if show_active_filters or show_sort_by -%}
     <div class="facets-summary">
       {%- if show_active_filters -%}
         {%- if section.settings.filter_layout != 'horizontal' -%}
-          {%- render 'active-facets', results: results -%}
         {%- else -%}
           {%- comment -%}The horizontal filtering show in a completely different way and have many exception, so the code end up pretty complex{%- endcomment -%}
 
