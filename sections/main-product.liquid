@@ -129,26 +129,12 @@
     </div>
   </div>
 
+                {% if product.description %}
     <div class="main-product-description-box">
       <span class="main-title-product">About this Product</span>
-      <div class="main-product-description">
-        <span>Product Description</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel ex sodales diam tristique sodales eget aliquam libero. Curabitur sodales sem quis mi faucibus, ac feugiat metus congue. Donec placerat facilisis auctor. Duis consequat non lorem et blandit. </p>
-      </div>
-      <div class="main-tech-specification">
-        <span>Technical Specification</span>
-        <ul>
-          <li>Brand - Stanco Safety Products™</li>
-          <li>Material - Indura Ultra Soft</li>
-          <li>Clothing Type - Full Kit</li>
-          <li>Color - Royal Blue</li>
-          <li>Size - Large</li>
-          <li>Compliance - NFPA 70E HRC/CAT 4 ASTM D6413</li>
-          <li>Included in Kit - Bib overall 35" coat hood hard cap & gear bag</li>
-          <li>Quantity per case - 99999 EA</li>
-        </ul>
-      </div>
+     {{ product.description }}
     </div>
+                  {% endif %}
 </div>
 
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
