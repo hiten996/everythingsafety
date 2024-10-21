@@ -18,21 +18,14 @@
     "rich_text_ziXGzi": {
       "type": "rich-text",
       "blocks": {
-        "subheading_kMxyG6": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "richtext_xhBWrw": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>We'd love to hear from you! Whether you have a question, feedback, or need assistance, our team is here to help. Feel free to reach out to us, and we'll get back to you as soon as possible.</p><p><strong>For inquiries, suggestions, or support, please contact us at:</strong></p><p>📧 <a><strong>sales@everythingsafety.com</strong></a></p><p>We’re committed to providing you with the best service and making sure all your needs are met. Don’t hesitate to drop us a message—your safety is our priority!</p>"
           }
         }
       },
       "block_order": [
-        "subheading_kMxyG6",
         "richtext_xhBWrw"
       ],
       "settings": {
