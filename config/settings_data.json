@@ -36,7 +36,7 @@
     "heading_apparition": "split_fade",
     "color_swatch_style": "square",
     "show_quick_buy": false,
-    "product_color_display": "swatch",
+    "product_color_display": "hide",
     "product_info_alignment": "start",
     "cart_type": "drawer",
     "cart_icon": "shopping_basket",
