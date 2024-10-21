@@ -412,6 +412,15 @@ price-list.price-list sale-price {
 .accordion__content .input-group .input-prefix{
   padding: 10px 10px;
 }
+:checked+.color-swatch:before, .color-swatch.is-selected:before {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 2px #202020;
+}
+.color-swatch:before {
+    box-shadow: 0 0 0 2px #ddd;
+    opacity: 1;
+}
 @media (max-width: 1150px) {
   .search-mobile{
     display: block;
