@@ -49,7 +49,11 @@
         {%- render 'product-gallery', product: product, product_form_id: product_form_id -%}
      {% else %}
           {{ 'image' | placeholder_svg_tag }}
-        
+           {%- if request.page_type != 'password' -%}
+            <div class="product-info__buy-buttons main-product-buy-buttons">
+              {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: true, show_gift_card_recipient:false, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
+            </div>
+          {%- endif -%}
       {%- endif -%}
 
       {%- render 'product-info', 
