@@ -35,6 +35,13 @@
             "show_taxes_notice": false
           }
         },
+        "inventory_YyAPqX": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -101,6 +108,7 @@
         "title",
         "badges",
         "price",
+        "inventory_YyAPqX",
         "quantity_selector",
         "variant_picker",
         "rating",
