@@ -23,7 +23,7 @@ Supported variables
         {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: sizes: '96px', widths: '96,192' -}}
         
       {% else %}
-        <div>
+        <div class="search-image-placeholder">
           {{ 'image' | placeholder_svg_tag }}
         
           </div>
