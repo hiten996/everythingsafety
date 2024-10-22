@@ -21,8 +21,18 @@ Supported variables
     <a href="{{ product.url }}" data-instant class="predictive-search-result group">
       {%- if product.featured_media -%}
         {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: sizes: '96px', widths: '96,192' -}}
+        
+      {% else %}
+        <div>
+          {{ 'image' | placeholder_svg_tag }}
+           {%- if request.page_type != 'password' -%}
+            <div class="product-info__buy-buttons main-product-buy-buttons">
+              {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: true, show_gift_card_recipient:false, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
+            </div>
+          {%- endif -%}
+          </div>
       {%- endif -%}
-
+      
       <div class="v-stack gap-1 sm:gap-1.5">
         {%- if settings.show_vendor -%}
           <span class="text-xs text-subdued">{{ product.vendor }}</span>
