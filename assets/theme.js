@@ -5236,3 +5236,14 @@ export {
   throttle,
   waitForEvent
 };
+
+
+
+const searchResults = document.querySelector('.predictive-search');
+
+document.addEventListener('click', (event) => {
+const isClickInside = searchResults.contains(event.target);
+    if (!isClickInside) {
+        document.querySelector('predictive-search button.text-subdued[type=reset]').click()
+    }
+});
