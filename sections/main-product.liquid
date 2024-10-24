@@ -76,7 +76,7 @@
       {% for product_handle in product.metafields.custom.bundle_products.value %}
         {% assign vid = product_handle.selected_or_first_available_variant.id %}
 
-        <input type="hidden" name="id[]" value="{{ vid }}">
+        <input type="hidden" name="comboid" value="{{ vid }}">
         <div class="bundled-product-image">
             <img src="{{ product_handle.featured_image.src | img_url: 'medium' }}" alt="{{ product_handle.title }}">
         </div>
@@ -92,7 +92,7 @@
         </div>
         <div>
 
-          <button type="submit" name="add" class="button button--xl button--secondary" is="custom-button"><span>Add to cart</span></button>
+          <button type="submit"  class="combo_addtocart button button--xl button--secondary" is="custom-button"><span>Add to cart</span></button>
 
         </div>
       </div>
