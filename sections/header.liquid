@@ -164,7 +164,6 @@ the underlying logic of the menu.
       {% endcomment %}
       <form action="{{ routes.search_url }}" method="get" class="search-container" role="search">
       <input type="search" name="q" class="search-input" placeholder="{{ 'search.general.search_placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="{{ 'search.general.title' | t | escape }}">
-      <button type="reset" class="text-subdued">{{ 'search.general.clear' | t }}</button>
       <button type="button" is="close-button" class="search-button">
         <img src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v1.png" alt="Search">
       </button>
@@ -199,6 +198,8 @@ the underlying logic of the menu.
       {%- endif -%}
 
       <div slot="results">
+      <button type="reset" class="text-subdued">x</button>
+        
         {%- if predictive_search.performed -%}
           {%- assign results_count = 0 -%}
           {%- assign categories_count = 0 -%}
