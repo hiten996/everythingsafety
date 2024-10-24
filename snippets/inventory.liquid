@@ -27,7 +27,9 @@ Supported variables
             <span class="text-with-icon text-warning">{%- render 'icon' with 'warning' -%} {{- 'product.inventory.oversell_stock' | t -}}</span>
           {%- endif -%}
         {%- else -%}
-          <span class="text-with-icon text-success">{%- render 'icon' with 'success' -%} {{- 'product.inventory.in_stock' | t -}}</span>
+          <span class="text-with-icon text-success">
+            {{ variant.inventory_quantity }}
+            {%- render 'icon' with 'success' -%} {{- 'product.inventory.in_stock' | t -}}</span>
         {%- endif -%}
       {%- endif -%}
     {%- elsif variant.incoming -%}
