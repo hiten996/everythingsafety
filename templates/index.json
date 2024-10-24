@@ -513,27 +513,12 @@
             "title": "Quick Delivery",
             "content": ""
           }
-        },
-        "item_bVf7gJ": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/31.png",
-            "mobile_icon_width": 24,
-            "icon_width": 88,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "14 Stores across US",
-            "content": ""
-          }
         }
       },
       "block_order": [
         "item_zQyr4A",
         "item_Y6W4Cn",
-        "item_7r6Viz",
-        "item_bVf7gJ"
+        "item_7r6Viz"
       ],
       "settings": {
         "full_width": true,
