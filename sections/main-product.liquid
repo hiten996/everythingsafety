@@ -55,7 +55,6 @@
               {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: true, show_gift_card_recipient:false, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
             </div>
           {%- endif -%}
-          
           </div>
       {%- endif -%}
           
@@ -66,7 +65,11 @@
         product_form_id: product_form_id,
         context: 'main_product'
       -%}
-        <div class="product-similar-buy">
+      
+    </div>
+
+  </product-rerender>
+  <div class="product-similar-buy">
     {% if product.metafields.custom.bundle_products  %}
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
@@ -97,11 +100,8 @@
 
         <span class="error error_combo"></span>
       </div>
+            {% endif %}
       </div>
-      {% endif %}
-    </div>
-
-  </product-rerender>
 
 
 
