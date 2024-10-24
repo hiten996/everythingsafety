@@ -37,7 +37,6 @@
         },
         "inventory_YyAPqX": {
           "type": "inventory",
-          "disabled": true,
           "settings": {
             "low_inventory_threshold": 0
           }
