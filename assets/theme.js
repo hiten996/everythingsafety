@@ -5254,7 +5254,6 @@ const isClickInside = searchResults.contains(event.target);
 
 if(document.querySelector('.combo_addtocart')){
 document.querySelector('.combo_addtocart').addEventListener('click', function(event) {
-  event.preventDefault(); 
 document.querySelector('.combo_addtocart').textContent = 'Adding....'
   let comboids = [];
   document.querySelectorAll('input[name="comboid"]').forEach(function(input) {
