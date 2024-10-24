@@ -5274,7 +5274,7 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
       console.log('Items added to cart:', response);
     document.querySelector('.combo_addtocart').textContent = 'Added!'
     setTimeout(function(){
-      document.querySelector('.combo_addtocart').textContent = 'Add to cart!'
+      document.querySelector('.combo_addtocart').textContent = 'Add to cart'
     },400)
     } else {
       console.error('Error adding items to cart:', xhr.responseText);
