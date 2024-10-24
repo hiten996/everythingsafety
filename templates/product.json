@@ -41,6 +41,11 @@
             "low_inventory_threshold": 0
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -50,11 +55,6 @@
             "swatch_selector_style": "swatch",
             "variant_image_options": "",
             "size_chart_page": "accessibility"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
           }
         },
         "rating": {
@@ -108,8 +108,8 @@
         "badges",
         "price",
         "inventory_YyAPqX",
-        "variant_picker",
         "quantity_selector",
+        "variant_picker",
         "rating",
         "payment_terms",
         "separator",
