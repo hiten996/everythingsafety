@@ -5285,7 +5285,7 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
               cartLink.click(); 
             }  
     } else {
-      console.error('Error adding items to cart:', JSON.parse(xhr.responseText.message));
+      console.error('Error adding items to cart:', JSON.parse(xhr.responseText).message);
       document.querySelector('.error_combo').textContent = xhr.responseText.message
     }
   };
