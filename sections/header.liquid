@@ -198,7 +198,6 @@ the underlying logic of the menu.
       {%- endif -%}
 
       <div slot="results">
-      <button type="reset" class="text-subdued">x</button>
         
         {%- if predictive_search.performed -%}
           {%- assign results_count = 0 -%}
@@ -302,6 +301,7 @@ the underlying logic of the menu.
                     --predictive-search-column-width: {% if categories_count > 2 %}0px{% else %}400px{% endif %};
                   }
                 </style>
+      <button type="reset" class="text-subdued">x</button>
 
                 <slot role="tablist" part="tab-list" name="title"></slot>
                 <slot part="tab-panels" name="content"></slot>
