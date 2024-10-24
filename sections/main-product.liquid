@@ -81,9 +81,9 @@
         </div>
         {% assign total_price = total_price | plus: product_handle.price %}
         
-      {% endfor %}  
-      </div>
-      <div class="main-product-content-with-button">
+      {% endfor %} 
+
+        <div class="main-product-content-with-button">
         <div class="sub-product-content">
           <span>
             Total Price: {{ total_price | money }}
@@ -97,6 +97,10 @@
 
         <span class="error error_combo"></span>
       </div>
+        
+      </div>
+      
+      
               
       {% endif %}
     <div class="main-right-product-content">
