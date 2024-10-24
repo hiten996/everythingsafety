@@ -5238,6 +5238,7 @@ export {
 };
 
 
+document.addEventListener('DOMContentLoaded', function() {
 
 const searchResults = document.querySelector('.predictive-search');
 
@@ -5246,4 +5247,5 @@ const isClickInside = searchResults.contains(event.target);
     if (!isClickInside) {
         document.querySelector('predictive-search button.text-subdued[type=reset]').click()
     }
+});
 });
