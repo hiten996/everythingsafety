@@ -90,7 +90,7 @@
               {%- endif -%}
 
               {%- if predictive_search.resources.queries.size > 0 -%}
-                <div class="predictive-search__tab-item" slot="title">
+                <div class="predictive-search__tab-item" slot="title" style="display:none">
                   <button type="button" class="h5">{{- 'search.general.suggestions' | t -}}</button>
                 </div>
 
@@ -100,7 +100,7 @@
               {%- endif -%}
 
               {%- if predictive_search.resources.articles.size > 0 -%}
-                <div class="predictive-search__tab-item" slot="title">
+                <div class="predictive-search__tab-item" slot="title" style="display:none">
                   <button type="button" class="h5">{{- 'search.general.posts' | t -}}</button>
                 </div>
 
@@ -110,7 +110,7 @@
               {%- endif -%}
 
               {%- if predictive_search.resources.collections.size > 0 -%}
-                <div class="predictive-search__tab-item" slot="title">
+                <div class="predictive-search__tab-item" slot="title" style="display:none">
                   <button type="button" class="h5">{{- 'search.general.collections' | t -}}</button>
                 </div>
 
