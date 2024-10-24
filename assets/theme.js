@@ -5255,7 +5255,7 @@ const isClickInside = searchResults.contains(event.target);
 if(document.querySelector('.combo_addtocart')){
 document.querySelector('.combo_addtocart').addEventListener('click', function(event) {
   event.preventDefault(); 
-
+document.querySelector('.combo_addtocart').textContent = 'Adding....'
   let comboids = [];
   document.querySelectorAll('input[name="comboid"]').forEach(function(input) {
     comboids.push({
@@ -5273,6 +5273,7 @@ document.querySelector('.combo_addtocart').addEventListener('click', function(ev
     if (xhr.status >= 200 && xhr.status < 300) {
       const response = JSON.parse(xhr.responseText);
       console.log('Items added to cart:', response);
+    document.querySelector('.combo_addtocart').textContent = 'Added!'
     } else {
       console.error('Error adding items to cart:', xhr.responseText);
     }
