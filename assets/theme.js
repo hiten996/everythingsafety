@@ -5270,6 +5270,7 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
   xhr.setRequestHeader('Accept', 'application/json');
 
   xhr.onload = function() {
+    $('.error_combo').text(' ')
     if (xhr.status >= 200 && xhr.status < 300) {
       const response = JSON.parse(xhr.responseText);
       console.log('Items added to cart:', response);
@@ -5285,6 +5286,7 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
             }  
     } else {
       console.error('Error adding items to cart:', xhr.responseText);
+      $('.error_combo').text(xhr.responseText)
     }
   };
 
