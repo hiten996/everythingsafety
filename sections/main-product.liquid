@@ -66,6 +66,38 @@
         context: 'main_product'
       -%}
     </div>
+<!-- add here -->
+
+    <div class="main-right-product-content">
+      <div>
+        {% if section.settings.heading %}
+        <span class="sub-right-product-content">
+          {{ section.settings.heading }}
+        </span>
+          {% endif %}
+        {% if section.settings.subheading %}
+          <p>{{ section.settings.subheading }}</p>
+          {% endif %}
+          
+        <div class="sub-payment-return-product">
+          {% if  section.settings.svg_1 or section.settings.text_1 %}
+          <div class="product-secure-payment">
+          {{ section.settings.svg_1 }}
+            <span>{{ section.settings.text_1 }}</span>
+          </div>
+            {% endif %}
+          {% if  section.settings.svg_2 or section.settings.text_2 %}
+          <div class="product-secure-payment product-return-policy">
+            {{ section.settings.svg_2 }}
+            <span>{{ section.settings.text_2 }}</span>
+          </div>
+            {% endif %}
+                
+        </div>
+      </div>
+    </div>
+    
+<!-- add here -->
   </product-rerender>
   <div class="add-on-product">
   <div class="product-similar-buy">
@@ -101,34 +133,7 @@
       </div>
       </div>
       {% endif %}
-    <div class="main-right-product-content">
-      <div>
-        {% if section.settings.heading %}
-        <span class="sub-right-product-content">
-          {{ section.settings.heading }}
-        </span>
-          {% endif %}
-        {% if section.settings.subheading %}
-          <p>{{ section.settings.subheading }}</p>
-          {% endif %}
-          
-        <div class="sub-payment-return-product">
-          {% if  section.settings.svg_1 or section.settings.text_1 %}
-          <div class="product-secure-payment">
-          {{ section.settings.svg_1 }}
-            <span>{{ section.settings.text_1 }}</span>
-          </div>
-            {% endif %}
-          {% if  section.settings.svg_2 or section.settings.text_2 %}
-          <div class="product-secure-payment product-return-policy">
-            {{ section.settings.svg_2 }}
-            <span>{{ section.settings.text_2 }}</span>
-          </div>
-            {% endif %}
-                
-        </div>
-      </div>
-    </div>
+
   </div>
 
                 {% if product.description  %}
