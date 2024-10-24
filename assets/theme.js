@@ -5249,3 +5249,46 @@ const isClickInside = searchResults.contains(event.target);
     }
 });
 });
+
+
+
+if(document.querySelector('.combo_addtocart')){
+document.querySelector('.combo_addtocart').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Collect comboid values
+  let comboids = [];
+  document.querySelectorAll('input[name="comboid"]').forEach(function(input) {
+    comboids.push({
+      id: input.value,
+      quantity: 1 // Adjust quantity as necessary
+    });
+  });
+
+  // Create the XMLHttpRequest object
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/cart/add.js', true); // Adjust endpoint as necessary
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader('Accept', 'application/json');
+
+  // Define what happens when the request is successful
+  xhr.onload = function() {
+    if (xhr.status >= 200 && xhr.status < 300) {
+      const response = JSON.parse(xhr.responseText);
+      console.log('Items added to cart:', response);
+      // Handle success (update UI, display success message, etc.)
+    } else {
+      console.error('Error adding items to cart:', xhr.responseText);
+      // Handle failure
+    }
+  };
+
+  // Define what happens in case of an error
+  xhr.onerror = function() {
+    console.error('Network error.');
+  };
+
+  // Send the request with the comboid data
+  xhr.send(JSON.stringify({ items: comboids }));
+});
+    }
