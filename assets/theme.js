@@ -5272,10 +5272,10 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
     if (xhr.status >= 200 && xhr.status < 300) {
       const response = JSON.parse(xhr.responseText);
       console.log('Items added to cart:', response);
-    document.querySelector('.combo_addtocart').textContent = 'Added!'
-    setTimeout(function(){
-      document.querySelector('.combo_addtocart').textContent = 'Add to cart'
-    },400)
+      document.querySelector('.combo_addtocart').textContent = 'Added!'
+      setTimeout(function(){
+        document.querySelector('.combo_addtocart').textContent = 'Add to cart'
+      },400)
     } else {
       console.error('Error adding items to cart:', xhr.responseText);
     }
