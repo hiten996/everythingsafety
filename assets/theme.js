@@ -5273,8 +5273,9 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
       const response = JSON.parse(xhr.responseText);
       console.log('Items added to cart:', response);
     document.querySelector('.combo_addtocart').textContent = 'Added!'
-
+setTimeout(function(){
     document.querySelector('.combo_addtocart').textContent = 'Add to cart!'
+},400)
       
     } else {
       console.error('Error adding items to cart:', xhr.responseText);
