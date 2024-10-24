@@ -808,9 +808,24 @@ header {
   }
 }
 @media (max-width: 700px) {
-  /* .cart-drawer__line-items .line-item__info .quantity-input{
+  .cart-drawer__line-items .line-item__info .quantity-input1{
     display: none;    
-  } */
+  }
+}
+.quantity-input1{
+  width: var(--quantity-input-characters-count, 1ch);
+    border-radius: var(--rounded-input);
+    text-align: center;
+    font-size: var(--text-xs);
+    -webkit-touch-callout: none;
+    -webkit-appearance: none;
+    background: none;
+    border-width: 1px;
+    outline: none;
+    min-width: 44px;
+    padding-block-start: var(--spacing-1);
+    padding-block-end: var(--spacing-1);
+}
 }
 @media (max-width: 500px) {
   .main-footer-nav-adv {
