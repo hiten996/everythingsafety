@@ -5277,6 +5277,12 @@ document.querySelector('.combo_addtocart').textContent = 'Adding....'
       setTimeout(function(){
         document.querySelector('.combo_addtocart').textContent = 'Add to cart'
       },400)
+
+      document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true })); 
+            const cartLink = document.querySelector('a[aria-controls="cart-drawer"]');
+            if (cartLink) {
+              cartLink.click(); 
+            }  
     } else {
       console.error('Error adding items to cart:', xhr.responseText);
     }
