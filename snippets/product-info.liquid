@@ -294,6 +294,8 @@ Supported variables
               {%- if quantity_rules != blank -%}
                 <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
               {%- endif -%}
+
+              <span class="error error_invetory"></span>
             </div>
           {%- endif -%}
 
