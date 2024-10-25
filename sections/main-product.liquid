@@ -70,7 +70,8 @@
 
   </product-rerender>
   <div class="product-similar-buy">
-{%- if recommendations.performed and recommendations.products_count > 0 -%}
+    {{ product.metafields.shopify--discovery--product_recommendation.related_products | json }}
+{%- if   recommendations.products_count > 0 -%}
       <div class="main-similar-left">
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
