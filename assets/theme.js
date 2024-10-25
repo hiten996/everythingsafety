@@ -2364,7 +2364,7 @@ var QuantitySelector = class extends HTMLElement {
   }
   stepDown() {
      document.querySelector('.error_invetory').textContent =  '';
-   if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < Number(document.querySelector('.quantity-selector__input').value))
+    if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < Number(document.querySelector('.quantity-selector__input').value))
     {
       document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
     }
