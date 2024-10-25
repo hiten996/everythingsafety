@@ -74,7 +74,7 @@
       <div class="main-similar-left">
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
-{%- for product_handle in shopify--discovery--product_recommendation.related_products limit: 2-%}
+{%- for product_handle in product.metafields.shopify--discovery--product_recommendation.related_products limit: 2-%}
   product_handle.title === {{ product_handle.title }}
   
         {% assign vid = product_handle.selected_or_first_available_variant.id %}
