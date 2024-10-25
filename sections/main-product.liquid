@@ -70,7 +70,7 @@
 
   </product-rerender>
   <div class="product-similar-buy">
-    === {{ product.metafields.shopify--discovery--product_recommendation.related_products }}
+    === {{ product.metafields | json }}
     {{ product.metafields.shopify--discovery--product_recommendation.related_products | json }}
     {% if product.metafields.custom.bundle_products  %}
       <div class="main-similar-left">
