@@ -2368,7 +2368,7 @@ var QuantitySelector = class extends HTMLElement {
     if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < (Number(document.querySelector('.quantity-selector__input').value) - 1))
     {
       document.querySelector('.quantity-selector__button[aria-label="Increase quantity"]').setAttribute('disabled', true);
-      document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
+      document.querySelector('.error_invetory').textContent = "You can only purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
     }
     this.inputElement.stepDown();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
@@ -2380,7 +2380,7 @@ var QuantitySelector = class extends HTMLElement {
     if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) - 1 <= Number(document.querySelector('.quantity-selector__input').value))
     {
       document.querySelector('.quantity-selector__button[aria-label="Increase quantity"]').setAttribute('disabled', true);
-      document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
+      document.querySelector('.error_invetory').textContent = "You can only purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
     }
     this.inputElement.stepUp();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
