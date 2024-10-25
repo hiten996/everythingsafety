@@ -49,8 +49,9 @@ Supported variables
       {%- else -%}
         <p class="bold">{{ line_item.product.title | default: line_item.title }}</p>
       {%- endif -%}
-      <span class="item-avalability-mini-cart">Only {{ line_item.inventory_quantity }}  Item Available</span>
-
+      {% if line_item.inventory_quantity < 10 %}
+        <span class="item-avalability-mini-cart">Only {{ line_item.inventory_quantity }}  Item Available</span>
+      {% endif %}
       
 
       
