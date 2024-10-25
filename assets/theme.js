@@ -2363,12 +2363,18 @@ var QuantitySelector = class extends HTMLElement {
     this.querySelector("button:last-of-type").addEventListener("click", this.stepUp.bind(this), { signal: this._abortController.signal });
   }
   stepDown() {
-    alert(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')))
+   if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) > Number(document.querySelector('.quantity-selector__input').value))
+    {
+      alert('More Qty')
+    }
     this.inputElement.stepDown();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
   }
   stepUp() {
-    alert(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')))
+    if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) > Number(document.querySelector('.quantity-selector__input').value))
+    {
+      alert('More Qty')
+    }
     this.inputElement.stepUp();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
   }
