@@ -70,23 +70,17 @@
 
   </product-rerender>
   <div class="product-similar-buy">
-    {{ product.metafields.shopify--discovery--product_recommendation.related_products | json }}
-{%- if   recommendations.products_count > 0 -%}
+    {{ product.metafields.shopify--discovery--product_recommendation.related_products }}
+    {% if product.metafields.custom.bundle_products  %}
       <div class="main-similar-left">
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
-{%- for product_handle in product.metafields.shopify--discovery--product_recommendation.related_products limit: 2-%}
-  product_handle.title === {{ product_handle.title }}
-  
+      {% for product_handle in product.metafields.custom.bundle_products.value %}
         {% assign vid = product_handle.selected_or_first_available_variant.id %}
 
         <input type="hidden" name="comboid" value="{{ vid }}">
         <div class="bundled-product-image">
-      {%- if product_handle.media.size > 0 -%}
             <img src="{{ product_handle.featured_image.src | img_url: 'medium' }}" alt="{{ product_handle.title }}">
-        {% else %}
-          {{ 'image' | placeholder_svg_tag }}
-          {% endif %}
         </div>
         {% assign total_price = total_price | plus: product_handle.price %}
         
