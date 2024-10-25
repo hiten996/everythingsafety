@@ -2365,7 +2365,9 @@ var QuantitySelector = class extends HTMLElement {
   stepDown() {
    if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < Number(document.querySelector('.quantity-selector__input').value))
     {
-      alert('More Qty')
+      alert('down More Qty')
+    }else{
+      alert('down less Qty')
     }
     this.inputElement.stepDown();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
@@ -2373,7 +2375,10 @@ var QuantitySelector = class extends HTMLElement {
   stepUp() {
     if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < Number(document.querySelector('.quantity-selector__input').value))
     {
-      alert('More Qty')
+      alert('up More Qty')
+    }else{
+      alert('up less Qty')
+      
     }
     this.inputElement.stepUp();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
