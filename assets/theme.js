@@ -2374,7 +2374,8 @@ var QuantitySelector = class extends HTMLElement {
   }
   stepUp() {
      document.querySelector('.error_invetory').textContent =  '';
-    $('.quantity-selector__button').removeAttr('disabled');
+    document.querySelector('.quantity-selector__button').removeAttribute('disabled');
+
     if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) <= Number(document.querySelector('.quantity-selector__input').value))
     {
       document.querySelector('.quantity-selector__button').setAttribute('disabled', true);
