@@ -144,7 +144,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "recommendations_count": 6,
+        "recommendations_count": 4,
         "products": [
 
         ],
