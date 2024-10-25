@@ -43,6 +43,8 @@
 
 <div {% render 'section-properties', tight: true %}>
   <product-rerender id="product-info-{{ product.id }}-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
+
+    {{ product | json }}
     <div class="product">
       {%- if product.media.size > 0 -%}
       
