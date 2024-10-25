@@ -2647,6 +2647,8 @@ var ProductCard = class extends HTMLElement {
     }
   }
   async _onSwatchChanged(event, target) {
+
+    alert('ddd');
     if (target.hasAttribute("data-variant-id")) {
       this.querySelectorAll(`a[href^="${Shopify.routes.root}products/${this.getAttribute("handle")}"`).forEach((link) => {
         const url = new URL(link.href);
