@@ -5249,19 +5249,19 @@ export {
 };
 
 
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
-const searchResults = document.querySelector('.predictive-search');
+// const searchResults = document.querySelector('.predictive-search');
 
-document.addEventListener('click', (event) => {
-   event.preventDefault();
+// document.addEventListener('click', (event) => {
+//    event.preventDefault();
   
-const isClickInside = searchResults.contains(event.target);
-    if (!isClickInside) {
-        document.querySelector('predictive-search button.text-subdued[type=reset]').click()
-    }
-});
-});
+// const isClickInside = searchResults.contains(event.target);
+//     if (!isClickInside) {
+//         document.querySelector('predictive-search button.text-subdued[type=reset]').click()
+//     }
+// });
+// });
 
 
 
