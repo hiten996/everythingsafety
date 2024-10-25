@@ -3099,6 +3099,7 @@ onRerender_fn = function(event) {
     this.replaceWith(matchingElement);
   } else {
     const blockTypes = ["sku", "badges", "price", "payment-terms", "variant-picker", "quantity-selector", "volume-pricing", "inventory", "buy-buttons", "pickup-availability", "liquid"];
+    alert('sss'));
     blockTypes.forEach((blockType) => {
       this.querySelectorAll(`[data-block-type="${blockType}"]`).forEach((element) => {
         const matchingBlock = matchingElement.querySelector(`[data-block-type="${blockType}"][data-block-id="${element.getAttribute("data-block-id")}"]`);
