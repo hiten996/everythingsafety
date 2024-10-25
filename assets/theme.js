@@ -2363,10 +2363,12 @@ var QuantitySelector = class extends HTMLElement {
     this.querySelector("button:last-of-type").addEventListener("click", this.stepUp.bind(this), { signal: this._abortController.signal });
   }
   stepDown() {
+    alert('down');
     this.inputElement.stepDown();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
   }
   stepUp() {
+    alert('up');
     this.inputElement.stepUp();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
   }
