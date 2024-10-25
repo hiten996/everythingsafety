@@ -70,11 +70,13 @@
 
   </product-rerender>
   <div class="product-similar-buy">
-    {{ product.recommendations.products | json }}
+    === {{ product.metafields.shopify--discovery--product_recommendation.related_products }}
+    {{ product.metafields.shopify--discovery--product_recommendation.related_products | json }}
+    {% if product.metafields.custom.bundle_products  %}
       <div class="main-similar-left">
       <div class="main-similar-product-image">
         {% assign total_price = 0 %}
-      {% for product_handle in recommendations.products %}
+      {% for product_handle in product.metafields.custom.bundle_products.value %}
         {% assign vid = product_handle.selected_or_first_available_variant.id %}
 
         <input type="hidden" name="comboid" value="{{ vid }}">
@@ -102,6 +104,7 @@
         <span class="error error_combo"></span>
       </div>
       </div>
+    {% endif %}
 
       <!-- add here -->
 
