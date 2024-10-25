@@ -2377,7 +2377,7 @@ var QuantitySelector = class extends HTMLElement {
      document.querySelector('.error_invetory').textContent =  '';
     document.querySelector('.quantity-selector__button[aria-label="Increase quantity"]').removeAttribute('disabled');
 
-    if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) <= Number(document.querySelector('.quantity-selector__input').value))
+    if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < Number(document.querySelector('.quantity-selector__input').value))
     {
       document.querySelector('.quantity-selector__button[aria-label="Increase quantity"]').setAttribute('disabled', true);
       // document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
