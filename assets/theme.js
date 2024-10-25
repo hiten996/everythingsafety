@@ -2365,18 +2365,20 @@ var QuantitySelector = class extends HTMLElement {
   stepDown() {
      document.querySelector('.error_invetory').textContent =  '';
     console.log(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) ,'===',  Number(document.querySelector('.quantity-selector__input').value))
-    if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < (Number(document.querySelector('.quantity-selector__input').value) - 1))
-    {
-      document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
-    }
+    // if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) < (Number(document.querySelector('.quantity-selector__input').value) - 1))
+    // {
+    //   document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
+    // }
     this.inputElement.stepDown();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
   }
   stepUp() {
      document.querySelector('.error_invetory').textContent =  '';
+    $('.quantity-selector__button').removeAttr('disabled');
     if(Number(document.querySelector('.inventory_quantity').getAttribute('data-qty')) <= Number(document.querySelector('.quantity-selector__input').value))
     {
-      document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
+      document.querySelector('.quantity-selector__button').setAttribute('disabled', true);
+      // document.querySelector('.error_invetory').textContent = "You can purchase maximum Quantity "+ Number(document.querySelector('.inventory_quantity').getAttribute('data-qty'))
     }
     this.inputElement.stepUp();
     this.inputElement.dispatchEvent(new Event("change", { bubbles: true }));
