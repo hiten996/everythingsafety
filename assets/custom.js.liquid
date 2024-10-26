@@ -11,16 +11,15 @@ $(document).ready(function() {
 var productId = $('.main-similar-left').data('id');
   $.getJSON(`${Shopify.routes.root}recommendations/products?product_id=${productId}&limit=2`, function(data) {
     if(data.products.length > 0){
-     $('.main-similar-left').show();
-      $('#product-images').empty();
-      let totalPrice = 0;
-      data.products.forEach(product => {
-          console.log('product',product);
-          totalPrice += parseFloat(product.price);
-          const productImage = `<div class="bundled-product-image"><img src="${product.media[0].src}" alt="${product.title}"></div>`;
-          $('#product-images').append(productImage);
-      });
-      $('#total-price').text(`$${totalPrice.toFixed(2)}`);
+    $('#product-images').empty();
+    let totalPrice = 0;
+    data.products.forEach(product => {
+        const variantId = product.variants[0]?.id || '';
+        totalPrice += product.price;
+        const productHTML = `<input type="hidden" name="comboid" value="${variantId}"><div class="bundled-product-image"><img src="${product.featured_image.url}" alt="${product.title}"></div>`;
+        $('#product-images').append(productHTML);
+    });
+    $('#total-price').text(`$${(totalPrice / 100).toFixed(2)}`);
     }else{
       $('.main-similar-left').hide();
     }
