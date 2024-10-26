@@ -10,6 +10,7 @@ $(document).ready(function() {
 
 var productId = $('.main-similar-left').data('id');
   $.getJSON(`${Shopify.routes.root}recommendations/products?product_id=${productId}&limit=2`, function(data) {
+    console.log(data);
     if(data.products.length > 0){
       $('#product-images').empty();
       let totalPrice = 0;
