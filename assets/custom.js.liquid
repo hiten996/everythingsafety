@@ -18,7 +18,7 @@ var productId = $('.main-similar-left').data('id');
       data.products.forEach(product => {
           const variantId = product.variants[0]?.id || '';
           totalPrice += product.price;
-          const productHTML = `<input type="hidden" name="comboid" value="${variantId}"><div class="bundled-product-image"><img src="${product.featured_image.url}" alt="${product.title}"></div>`;
+          const productHTML = `<input type="hidden" name="comboid" value="${variantId}"><div class="bundled-product-image"><img src="${product.media[0].src}" alt="${product.title}"></div>`;
           $('#product-images').append(productHTML);
       });
     $('#total-price').text(`$${(totalPrice / 100).toFixed(2)}`);
