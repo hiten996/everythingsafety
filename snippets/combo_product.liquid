@@ -1,22 +1,37 @@
  <div class="product-similar-buy">
 
-<div class="main-similar-left">
-    <div class="main-similar-product-image" id="product-images">
-        <!-- Product images will be dynamically injected here -->
-    </div>
-    
-    <div class="main-product-content-with-button">
+           <div class="combo_product"></div>
+      <div class="main-similar-left">
+      <div class="main-similar-product-image">
+        {% assign total_price = 0 %}
+      {% for product_handle in product.metafields.custom.bundle_products.value %}
+        {% assign vid = product_handle.selected_or_first_available_variant.id %}
+
+        <input type="hidden" name="comboid" value="{{ vid }}">
+        <div class="bundled-product-image">
+            <img src="{{ product_handle.featured_image.src | img_url: 'medium' }}" alt="{{ product_handle.title }}">
+        </div>
+        {% assign total_price = total_price | plus: product_handle.price %}
+        
+      {% endfor %} 
+        
+      </div>
+      
+      <div class="main-product-content-with-button">
         <div class="sub-product-content">
-            <span>
-                Total Price: <span class="money" id="total-price">$0.00</span>
-            </span>
+          <span>
+            Total Price: {{ total_price | money }}
+          </span>
         </div>
         <div>
-            <a href="#" class="combo_addtocart button button--xl button--secondary"><span>Add to cart</span></a>
+
+          <a href="#" class="combo_addtocart button button--xl button--secondary"><span>Add to cart</span></a>
+
         </div>
+
         <span class="error error_combo"></span>
-    </div>
-</div>
+      </div>
+      </div>
 
       <!-- add here -->
 
