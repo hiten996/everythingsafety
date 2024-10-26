@@ -5256,16 +5256,17 @@ export {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+  const searchResults = document.querySelector('.predictive-search');
 
-const searchResults = document.querySelector('.predictive-search');
+  document.body.addEventListener('click', (event) => {
+    const isClickInside = searchResults.contains(event.target);
 
-document.addEventListener('click', (event) => {
-  const isClickInside = searchResults.contains(event.target);
     if (!isClickInside) {
-        document.querySelector('predictive-search button.text-subdued[type=reset]').click()
+      searchResults.classList.remove('is-active');
     }
   });
 });
+
 
 
 
