@@ -70,74 +70,7 @@
     </div>
 
   </product-rerender>
-  <div class="product-similar-buy">
-    {% if product.metafields.custom.bundle_products  %}
-      <div class="main-similar-left">
-      <div class="main-similar-product-image">
-        {% assign total_price = 0 %}
-      {% for product_handle in product.metafields.custom.bundle_products.value %}
-        {% assign vid = product_handle.selected_or_first_available_variant.id %}
-
-        <input type="hidden" name="comboid" value="{{ vid }}">
-        <div class="bundled-product-image">
-            <img src="{{ product_handle.featured_image.src | img_url: 'medium' }}" alt="{{ product_handle.title }}">
-        </div>
-        {% assign total_price = total_price | plus: product_handle.price %}
-        
-      {% endfor %} 
-        
-      </div>
-      
-      <div class="main-product-content-with-button">
-        <div class="sub-product-content">
-          <span>
-            Total Price: {{ total_price | money }}
-          </span>
-        </div>
-        <div>
-
-          <a href="#" class="combo_addtocart button button--xl button--secondary"><span>Add to cart</span></a>
-
-        </div>
-
-        <span class="error error_combo"></span>
-      </div>
-      </div>
-    {% endif %}
-
-      <!-- add here -->
-
-    <div class="main-right-product-content">
-      <div>
-        {% if section.settings.heading %}
-        <span class="sub-right-product-content">
-          {{ section.settings.heading }}
-        </span>
-          {% endif %}
-        {% if section.settings.subheading %}
-          <p>{{ section.settings.subheading }}</p>
-          {% endif %}
-          
-        <div class="sub-payment-return-product">
-          {% if  section.settings.svg_1 or section.settings.text_1 %}
-          <div class="product-secure-payment">
-          {{ section.settings.svg_1 }}
-            <span>{{ section.settings.text_1 }}</span>
-          </div>
-            {% endif %}
-          {% if  section.settings.svg_2 or section.settings.text_2 %}
-          <div class="product-secure-payment product-return-policy">
-            {{ section.settings.svg_2 }}
-            <span>{{ section.settings.text_2 }}</span>
-          </div>
-            {% endif %}
-                
-        </div>
-      </div>
-    </div>
-    
-<!-- add here -->
-      </div>
+ {% render 'combo_product', product: product, section: section %}
 
 
 
