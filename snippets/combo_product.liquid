@@ -1,7 +1,7 @@
  <div class="product-similar-buy">
 
       <div class="main-similar-left" data-id="{{ product.id }}" style="display:none">
-      <div class="main-similar-product-image">
+      <div class="main-similar-product-image" id="product-images">
         {% assign total_price = 0 %}
       {% for product_handle in product.metafields.custom.bundle_products.value %}
         {% assign vid = product_handle.selected_or_first_available_variant.id %}
