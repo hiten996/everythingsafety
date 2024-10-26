@@ -100,6 +100,16 @@
             "products": "{{ product.metafields.custom.variation_products.value }}",
             "selector_style": "variant_image"
           }
+        },
+        "associated_products_DpwG9X": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 2,
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -115,7 +125,8 @@
         "separator",
         "description",
         "buy_buttons",
-        "product_variations_jKjEzH"
+        "product_variations_jKjEzH",
+        "associated_products_DpwG9X"
       ],
       "settings": {
         "full_width": true,
