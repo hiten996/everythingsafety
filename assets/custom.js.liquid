@@ -2,9 +2,9 @@ $(document).ready(function() {
   const $searchResults = $('.predictive-search');
 
   $(document).click(function(event) {
-    const isClickInside = $searchResults.has(event.target).length > 0 || $searchResults.is(event.target);
-    if (!isClickInside) {
-      $('predictive-search button.text-subdued[type=reset]').trigger('click')
-    }
+    // const isClickInside = $searchResults.has(event.target).length > 0 || $searchResults.is(event.target);
+    // if (!isClickInside) {
+    //   $('predictive-search button.text-subdued[type=reset]').trigger('click')
+    // }
   });
 });
