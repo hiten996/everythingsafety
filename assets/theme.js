@@ -5255,19 +5255,6 @@ export {
 };
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const searchResults = document.querySelector('.predictive-search');
-
-  document.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevents page scrolling to the top
-    const isClickInside = searchResults.contains(event.target);
-
-    if (!isClickInside) {
-      // Clear the search input and hide results without triggering a button click
-      searchResults.classList.remove('is-active');
-    }
-  });
-});
 
 
 
