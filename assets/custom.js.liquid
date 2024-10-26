@@ -7,4 +7,23 @@ $(document).ready(function() {
       $('predictive-search button.text-subdued[type=reset]').trigger('click')
     }
   });
+
+
+  $.getJSON(`${Shopify.routes.root}recommendations/products?product_id=9608202486062&limit=2`, function(data) {
+    if(data.products.length > 0){
+     $('.main-similar-left').show();
+      $('#product-images').empty();
+      let totalPrice = 0;
+      data.products.forEach(product => {
+          console.log('product',product);
+          totalPrice += parseFloat(product.price);
+          const productImage = `<div class="bundled-product-image"><img src="${product.media[0].src}" alt="${product.title}"></div>`;
+          $('#product-images').append(productImage);
+      });
+      $('#total-price').text(`$${totalPrice.toFixed(2)}`);
+    }else{
+      $('.main-similar-left').hide();
+    }
+  
+  });
 });
